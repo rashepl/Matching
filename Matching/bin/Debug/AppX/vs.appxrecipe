@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>PC</Machine>
+    <WindowsUser>Richard</WindowsUser>
+    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>d21e6880-b205-4a16-9cd6-6257441c6ff8</PackageIdentityName>
+    <IntermediateOutputPath>D:\Software Projects\Matching\Matching\obj\Debug\</IntermediateOutputPath>
+    <RegisteredManifestChecksum>C52053CAEB748AE8AF7F6C3993B76BB8AC2C67FCCFAA2635D6DDC3EF1897FA20</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>d21e6880-b205-4a16-9cd6-6257441c6ff8_1.0.0.0_neutral__bqbb28m2ksa1g</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>d21e6880-b205-4a16-9cd6-6257441c6ff8_bqbb28m2ksa1g!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>d21e6880-b205-4a16-9cd6-6257441c6ff8</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=Richard</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+    <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="D:\Software Projects\Matching\Matching\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-11-26T01:50:31.020</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="D:\Software Projects\Matching\Matching\bin\Debug\Matching.exe">
+      <PackagePath>Matching.exe</PackagePath>
+      <Modified>2014-11-26T01:50:30.849</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Software Projects\Matching\Matching\Assets\Logo.scale-100.png">
+      <PackagePath>Assets\Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-07-31T15:01:26.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Software Projects\Matching\Matching\Assets\SmallLogo.scale-100.png">
+      <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-07-31T15:01:26.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Software Projects\Matching\Matching\Assets\SplashScreen.scale-100.png">
+      <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-07-31T15:01:26.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Software Projects\Matching\Matching\Assets\StoreLogo.scale-100.png">
+      <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-07-31T15:01:26.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Software Projects\Matching\Matching\bin\Debug\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+      <Modified>2014-11-26T01:23:46.260</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Software Projects\Matching\Matching\bin\Debug\GameBoard.xbf">
+      <PackagePath>GameBoard.xbf</PackagePath>
+      <Modified>2014-11-26T01:50:30.539</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Software Projects\Matching\Matching\bin\Debug\MainPage.xbf">
+      <PackagePath>MainPage.xbf</PackagePath>
+      <Modified>2014-11-26T01:50:30.539</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Software Projects\Matching\Matching\bin\Debug\Matching.xr.xml">
+      <PackagePath>Matching.xr.xml</PackagePath>
+      <Modified>2014-11-26T01:50:30.525</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Software Projects\Matching\Matching\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2014-11-26T01:50:30.946</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>
