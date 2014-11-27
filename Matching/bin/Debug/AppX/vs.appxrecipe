@@ -20,13 +20,13 @@
     <AppXManifest Include="D:\Software Projects\Matching\Matching\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2014-11-27T02:55:04.673</Modified>
+      <Modified>2014-11-27T16:19:19.192</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\Software Projects\Matching\Matching\bin\Debug\Matching.exe">
       <PackagePath>Matching.exe</PackagePath>
-      <Modified>2014-11-27T03:01:42.407</Modified>
+      <Modified>2014-11-27T16:19:19.035</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Software Projects\Matching\Matching\Assets\Logo.scale-100.png">
       <PackagePath>Assets\Logo.scale-100.png</PackagePath>
@@ -54,35 +54,59 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Software Projects\Matching\Matching\bin\Debug\CircleCard.xbf">
       <PackagePath>CircleCard.xbf</PackagePath>
-      <Modified>2014-11-27T03:00:26.754</Modified>
+      <Modified>2014-11-27T16:18:46.250</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Software Projects\Matching\Matching\bin\Debug\DiamondCard.xbf">
+      <PackagePath>DiamondCard.xbf</PackagePath>
+      <Modified>2014-11-27T16:18:46.251</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Software Projects\Matching\Matching\bin\Debug\GameBoard.xbf">
       <PackagePath>GameBoard.xbf</PackagePath>
-      <Modified>2014-11-27T03:01:42.078</Modified>
+      <Modified>2014-11-27T16:18:46.251</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Software Projects\Matching\Matching\bin\Debug\HexagonCard.xbf">
+      <PackagePath>HexagonCard.xbf</PackagePath>
+      <Modified>2014-11-27T16:18:46.251</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Software Projects\Matching\Matching\bin\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
       <Modified>2014-11-27T03:00:26.755</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Software Projects\Matching\Matching\bin\Debug\MoonCard.xbf">
+      <PackagePath>MoonCard.xbf</PackagePath>
+      <Modified>2014-11-27T16:18:46.251</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Software Projects\Matching\Matching\bin\Debug\ParallelogramCard.xbf">
+      <PackagePath>ParallelogramCard.xbf</PackagePath>
+      <Modified>2014-11-27T16:18:46.252</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Software Projects\Matching\Matching\bin\Debug\PentagonCard.xbf">
+      <PackagePath>PentagonCard.xbf</PackagePath>
+      <Modified>2014-11-27T16:18:46.252</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Software Projects\Matching\Matching\bin\Debug\SquareCard.xbf">
       <PackagePath>SquareCard.xbf</PackagePath>
-      <Modified>2014-11-27T03:00:26.755</Modified>
+      <Modified>2014-11-27T16:18:46.252</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Software Projects\Matching\Matching\bin\Debug\StarCard.xbf">
+      <PackagePath>StarCard.xbf</PackagePath>
+      <Modified>2014-11-27T16:18:46.253</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Software Projects\Matching\Matching\bin\Debug\TrapezoidCard.xbf">
       <PackagePath>TrapezoidCard.xbf</PackagePath>
-      <Modified>2014-11-27T03:00:26.755</Modified>
+      <Modified>2014-11-27T16:18:46.253</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Software Projects\Matching\Matching\bin\Debug\TriangleCard.xbf">
       <PackagePath>TriangleCard.xbf</PackagePath>
-      <Modified>2014-11-27T03:00:26.755</Modified>
+      <Modified>2014-11-27T16:18:46.253</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Software Projects\Matching\Matching\bin\Debug\Matching.xr.xml">
       <PackagePath>Matching.xr.xml</PackagePath>
-      <Modified>2014-11-27T03:00:26.738</Modified>
+      <Modified>2014-11-27T16:18:46.222</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Software Projects\Matching\Matching\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2014-11-27T02:55:04.608</Modified>
+      <Modified>2014-11-27T16:19:19.124</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

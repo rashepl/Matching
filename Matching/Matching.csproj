@@ -115,15 +115,33 @@
     <Compile Include="Common\ObservableDictionary.cs" />
     <Compile Include="Common\RelayCommand.cs" />
     <Compile Include="Common\SuspensionManager.cs" />
+    <Compile Include="DiamondCard.xaml.cs">
+      <DependentUpon>DiamondCard.xaml</DependentUpon>
+    </Compile>
     <Compile Include="GameBoard.xaml.cs">
       <DependentUpon>GameBoard.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HexagonCard.xaml.cs">
+      <DependentUpon>HexagonCard.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="MoonCard.xaml.cs">
+      <DependentUpon>MoonCard.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ParallelogramCard.xaml.cs">
+      <DependentUpon>ParallelogramCard.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PentagonCard.xaml.cs">
+      <DependentUpon>PentagonCard.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SquareCard.xaml.cs">
       <DependentUpon>SquareCard.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="StarCard.xaml.cs">
+      <DependentUpon>StarCard.xaml</DependentUpon>
     </Compile>
     <Compile Include="TrapezoidCard.xaml.cs">
       <DependentUpon>TrapezoidCard.xaml</DependentUpon>
@@ -153,7 +171,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="DiamondCard.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="GameBoard.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="HexagonCard.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -161,7 +187,23 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="MoonCard.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ParallelogramCard.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PentagonCard.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="SquareCard.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="StarCard.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

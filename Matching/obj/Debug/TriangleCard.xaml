@@ -8,16 +8,20 @@
     mc:Ignorable="d"
     d:DesignHeight="300"
     d:DesignWidth="400">
-    
+
     <Grid Background="#FF96DE81">
-        <Polygon Points="200,10 10,290 390,290" StrokeThickness="5" Stroke="Black">
-            <Polygon.Fill>
-                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="#FFEEE8AB" Offset="0"/>
-                    <GradientStop Color="#FFDAC921" Offset="1"/>
-                </LinearGradientBrush>
-            </Polygon.Fill>
-        </Polygon>
+        <Border BorderBrush="Black" BorderThickness="5">
+            <Viewbox Stretch="Fill">
+                <Polygon Points="200,10 10,280 380,280" StrokeThickness="5" Stroke="Black" Width="390" Height="290">
+                    <Polygon.Fill>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FFEEE8AB" Offset="0"/>
+                            <GradientStop Color="#FFDAC921" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Polygon.Fill>
+                </Polygon>
+            </Viewbox>
+        </Border>
     </Grid>
 </UserControl>
 

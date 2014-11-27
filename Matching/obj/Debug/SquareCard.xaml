@@ -10,15 +10,18 @@
     d:DesignWidth="400">
 
     <Grid Background="#FF96DE81">
-        <Rectangle Margin="10" Stroke="Black" StrokeThickness="5">
-            <Rectangle.Fill>
-                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="#FFD4AFEA" Offset="0"/>
-                    <GradientStop Color="#FFCB2EDA" Offset="1"/>
-                </LinearGradientBrush>
-            </Rectangle.Fill>
-        </Rectangle>
-        <Border BorderBrush="Black" BorderThickness="5"/>
+        <Border BorderBrush="Black" BorderThickness="5">
+            <Viewbox Stretch="Fill">
+                <Rectangle Margin="10" Stroke="Black" StrokeThickness="5" Height="300" Width="400">
+                    <Rectangle.Fill>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FFD4AFEA" Offset="0"/>
+                            <GradientStop Color="#FFCB2EDA" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Rectangle.Fill>
+                </Rectangle>
+            </Viewbox>
+        </Border>
     </Grid>
 </UserControl>
 

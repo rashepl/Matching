@@ -10,15 +10,17 @@
     d:DesignWidth="400">
 
     <Grid Background="#FF96DE81">
-        <Ellipse Stroke="Black" StrokeThickness="5" Margin="10">
-            <Ellipse.Fill>
-                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="#FFE4E6EE" Offset="0"/>
-                    <GradientStop Color="#FF6373BF" Offset="1"/>
-                </LinearGradientBrush>
-            </Ellipse.Fill>
-        </Ellipse>
-        <Border BorderBrush="Black" BorderThickness="5"/>
-
+        <Border BorderBrush="Black" BorderThickness="5">
+            <Viewbox Stretch="Fill">
+                <Ellipse Stroke="Black" StrokeThickness="5" Margin="10" Width="400" Height="300">
+                    <Ellipse.Fill>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FFE4E6EE" Offset="0"/>
+                            <GradientStop Color="#FF6373BF" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Ellipse.Fill>
+                </Ellipse>
+            </Viewbox>
+        </Border>
     </Grid>
 </UserControl>

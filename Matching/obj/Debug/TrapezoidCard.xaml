@@ -10,14 +10,18 @@
     d:DesignWidth="400">
 
     <Grid Background="#FF96DE81">
-        <Polygon Stroke="Black" StrokeThickness="5" Points="100,10 10,280 390,280 300,10" >
-            <Polygon.Fill>
-                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="#FFEE9999" Offset="0"/>
-                    <GradientStop Color="#FFCD4040" Offset="1"/>
-                </LinearGradientBrush>
-            </Polygon.Fill>
-        </Polygon>
+        <Border BorderThickness="5" BorderBrush="Black">
+            <Viewbox Stretch="Fill">
+                <Polygon Stroke="Black" StrokeThickness="5" Points="100,10 10,280 390,280 300,10" Height="290" Width="400" >
+                    <Polygon.Fill>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FFEE9999" Offset="0"/>
+                            <GradientStop Color="#FFCD4040" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Polygon.Fill>
+                </Polygon>
+            </Viewbox>
+        </Border>
     </Grid>
 </UserControl>
 

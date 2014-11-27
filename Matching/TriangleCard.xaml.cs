@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Matching.Common;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -19,9 +20,28 @@ namespace Matching
 {
 	public sealed partial class TriangleCard : UserControl
 	{
+		#region member variables
+		#endregion
+
+		#region properties
+		#endregion
+
+		#region construction / destruction
+
+		/// <summary>
+		/// construct the triangle card
+		/// </summary>
 		public TriangleCard()
 		{
-			this.InitializeComponent();
+			InitializeComponent();
 		}
+	
+		#endregion
+
+		#region methods
+		#endregion
+
+		#region event handlers
+		#endregion
 	}
 }

@@ -41,14 +41,32 @@
     <AppxPackagedFile Include="D:\Software Projects\Matching\Matching\bin\Debug\CircleCard.xbf">
       <PackagePath>CircleCard.xbf</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Software Projects\Matching\Matching\bin\Debug\DiamondCard.xbf">
+      <PackagePath>DiamondCard.xbf</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Software Projects\Matching\Matching\bin\Debug\GameBoard.xbf">
       <PackagePath>GameBoard.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Software Projects\Matching\Matching\bin\Debug\HexagonCard.xbf">
+      <PackagePath>HexagonCard.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Software Projects\Matching\Matching\bin\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Software Projects\Matching\Matching\bin\Debug\MoonCard.xbf">
+      <PackagePath>MoonCard.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Software Projects\Matching\Matching\bin\Debug\ParallelogramCard.xbf">
+      <PackagePath>ParallelogramCard.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Software Projects\Matching\Matching\bin\Debug\PentagonCard.xbf">
+      <PackagePath>PentagonCard.xbf</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Software Projects\Matching\Matching\bin\Debug\SquareCard.xbf">
       <PackagePath>SquareCard.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Software Projects\Matching\Matching\bin\Debug\StarCard.xbf">
+      <PackagePath>StarCard.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Software Projects\Matching\Matching\bin\Debug\TrapezoidCard.xbf">
       <PackagePath>TrapezoidCard.xbf</PackagePath>
