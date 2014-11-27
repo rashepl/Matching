@@ -46,5 +46,36 @@
             <TextBlock x:Name="pageTitle" Text="{StaticResource AppName}" Style="{StaticResource HeaderTextBlockStyle}" Grid.Column="1" 
                         IsHitTestVisible="false" TextWrapping="NoWrap" VerticalAlignment="Bottom" Margin="0,0,30,40"/>
         </Grid>
+        <Grid Grid.Row="1" Margin="5">
+            <Grid.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFF5F5BC" Offset="0"/>
+                    <GradientStop Color="#FFEAE248" Offset="1"/>
+                    <GradientStop Color="#FFD3D336" Offset="0.364"/>
+                    <GradientStop Color="#FFE8E89F" Offset="0.749"/>
+                </LinearGradientBrush>
+            </Grid.Background>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200*"/>
+                <ColumnDefinition Width="200*"/>
+                <ColumnDefinition Width="200*"/>
+                <ColumnDefinition Width="200*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="200*"/>
+                <RowDefinition Height="200*"/>
+                <RowDefinition Height="200*"/>
+                <RowDefinition Height="200*"/>
+            </Grid.RowDefinitions>
+            <local:CircleCard Margin="5"/>
+            <local:CircleCard Grid.Column="1" Grid.Row="1" Margin="5"/>
+            <local:SquareCard Grid.Column="2" Grid.Row="2" Margin="5"/>
+            <local:SquareCard Grid.Row="3" Margin="5"/>
+            <local:CircleCard Grid.Column="3" Margin="5"/>
+            <local:CircleCard Grid.Column="3" Grid.Row="2" Margin="5"/>
+            <local:SquareCard Grid.Row="1" Margin="5"/>
+            <local:SquareCard Grid.Column="1" Margin="5"/>
+
+        </Grid>
     </Grid>
 </Page>

@@ -20,7 +20,7 @@
             <RowDefinition Height="160*"/>
         </Grid.RowDefinitions>
         <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Text="Welcome to rashepl's Matching Game!" VerticalAlignment="Center" FontSize="40" Grid.ColumnSpan="3" TextAlignment="Center" />
-        <Button Content="Click to Begin" HorizontalAlignment="Stretch" Grid.Row="2" Grid.Column="1" VerticalAlignment="Stretch" FontSize="40" />
+        <Button x:ConnectionId='1' Content="Click to Begin" HorizontalAlignment="Stretch" Grid.Row="2" Grid.Column="1" VerticalAlignment="Stretch" FontSize="40"                        />
     </Grid>
 </Page>
 
