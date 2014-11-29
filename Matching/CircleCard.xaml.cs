@@ -17,11 +17,48 @@ using Windows.UI.Xaml.Navigation;
 
 namespace Matching
 {
-	public sealed partial class CircleCard : UserControl
+	public sealed partial class CircleCard : UserControl, ICard
 	{
+		#region member variables
+		#endregion
+
+		#region properties
+
+		/// <summary>
+		/// gets/sets the selected status of the card
+		/// </summary>
+		public bool Selected
+		{
+			get;
+			set;
+		}
+
+		/// <summary>
+		/// gets the name of the card
+		/// </summary>
+		public string CardName
+		{
+			get { return Name; }
+		}
+
+		#endregion
+
+		#region construction / destruction
+		
+		/// <summary>
+		/// constructs a new circle card
+		/// </summary>
 		public CircleCard()
 		{
 			this.InitializeComponent();
 		}
+	
+		#endregion
+
+		#region methods
+		#endregion
+
+		#region event handlers
+		#endregion
 	}
 }

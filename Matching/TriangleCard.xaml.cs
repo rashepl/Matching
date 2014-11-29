@@ -18,12 +18,30 @@ using Windows.UI.Xaml.Navigation;
 
 namespace Matching
 {
-	public sealed partial class TriangleCard : UserControl
+	public sealed partial class TriangleCard : UserControl, ICard
 	{
 		#region member variables
 		#endregion
 
 		#region properties
+
+		/// <summary>
+		/// gets/sets the selected state of the card
+		/// </summary>
+		public bool Selected
+		{
+			get;
+			set;
+		}
+
+		/// <summary>
+		/// gets the name of the card
+		/// </summary>
+		public string CardName
+		{
+			get { return Name; }
+		}
+		
 		#endregion
 
 		#region construction / destruction
