@@ -125,16 +125,16 @@ namespace Matching.Matching_XamlTypeInfo
         private void InitTypeTables()
         {
             _typeNameTable = new string[21];
-            _typeNameTable[0] = "Matching.BackOfCard";
-            _typeNameTable[1] = "Windows.UI.Xaml.Controls.UserControl";
+            _typeNameTable[0] = "Matching.BoolToVisibilityConverter";
+            _typeNameTable[1] = "Object";
             _typeNameTable[2] = "Matching.CircleCard";
-            _typeNameTable[3] = "Boolean";
-            _typeNameTable[4] = "String";
-            _typeNameTable[5] = "Matching.DiamondCard";
-            _typeNameTable[6] = "Matching.GameBoard";
-            _typeNameTable[7] = "Windows.UI.Xaml.Controls.Page";
-            _typeNameTable[8] = "Matching.Common.ObservableDictionary";
-            _typeNameTable[9] = "Object";
+            _typeNameTable[3] = "Windows.UI.Xaml.Controls.UserControl";
+            _typeNameTable[4] = "Boolean";
+            _typeNameTable[5] = "String";
+            _typeNameTable[6] = "Matching.DiamondCard";
+            _typeNameTable[7] = "Matching.GameBoard";
+            _typeNameTable[8] = "Windows.UI.Xaml.Controls.Page";
+            _typeNameTable[9] = "Matching.Common.ObservableDictionary";
             _typeNameTable[10] = "Matching.Common.NavigationHelper";
             _typeNameTable[11] = "Windows.UI.Xaml.DependencyObject";
             _typeNameTable[12] = "Matching.HexagonCard";
@@ -148,16 +148,16 @@ namespace Matching.Matching_XamlTypeInfo
             _typeNameTable[20] = "Matching.TriangleCard";
 
             _typeTable = new global::System.Type[21];
-            _typeTable[0] = typeof(global::Matching.BackOfCard);
-            _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
+            _typeTable[0] = typeof(global::Matching.BoolToVisibilityConverter);
+            _typeTable[1] = typeof(global::System.Object);
             _typeTable[2] = typeof(global::Matching.CircleCard);
-            _typeTable[3] = typeof(global::System.Boolean);
-            _typeTable[4] = typeof(global::System.String);
-            _typeTable[5] = typeof(global::Matching.DiamondCard);
-            _typeTable[6] = typeof(global::Matching.GameBoard);
-            _typeTable[7] = typeof(global::Windows.UI.Xaml.Controls.Page);
-            _typeTable[8] = typeof(global::Matching.Common.ObservableDictionary);
-            _typeTable[9] = typeof(global::System.Object);
+            _typeTable[3] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
+            _typeTable[4] = typeof(global::System.Boolean);
+            _typeTable[5] = typeof(global::System.String);
+            _typeTable[6] = typeof(global::Matching.DiamondCard);
+            _typeTable[7] = typeof(global::Matching.GameBoard);
+            _typeTable[8] = typeof(global::Windows.UI.Xaml.Controls.Page);
+            _typeTable[9] = typeof(global::Matching.Common.ObservableDictionary);
             _typeTable[10] = typeof(global::Matching.Common.NavigationHelper);
             _typeTable[11] = typeof(global::Windows.UI.Xaml.DependencyObject);
             _typeTable[12] = typeof(global::Matching.HexagonCard);
@@ -203,11 +203,11 @@ namespace Matching.Matching_XamlTypeInfo
             return -1;
         }
 
-        private object Activate_0_BackOfCard() { return new global::Matching.BackOfCard(); }
+        private object Activate_0_BoolToVisibilityConverter() { return new global::Matching.BoolToVisibilityConverter(); }
         private object Activate_2_CircleCard() { return new global::Matching.CircleCard(); }
-        private object Activate_5_DiamondCard() { return new global::Matching.DiamondCard(); }
-        private object Activate_6_GameBoard() { return new global::Matching.GameBoard(); }
-        private object Activate_8_ObservableDictionary() { return new global::Matching.Common.ObservableDictionary(); }
+        private object Activate_6_DiamondCard() { return new global::Matching.DiamondCard(); }
+        private object Activate_7_GameBoard() { return new global::Matching.GameBoard(); }
+        private object Activate_9_ObservableDictionary() { return new global::Matching.Common.ObservableDictionary(); }
         private object Activate_12_HexagonCard() { return new global::Matching.HexagonCard(); }
         private object Activate_13_MainPage() { return new global::Matching.MainPage(); }
         private object Activate_14_MoonCard() { return new global::Matching.MoonCard(); }
@@ -217,7 +217,7 @@ namespace Matching.Matching_XamlTypeInfo
         private object Activate_18_StarCard() { return new global::Matching.StarCard(); }
         private object Activate_19_TrapezoidCard() { return new global::Matching.TrapezoidCard(); }
         private object Activate_20_TriangleCard() { return new global::Matching.TriangleCard(); }
-        private void MapAdd_8_ObservableDictionary(object instance, object key, object item)
+        private void MapAdd_9_ObservableDictionary(object instance, object key, object item)
         {
             var collection = (global::System.Collections.Generic.IDictionary<global::System.String, global::System.Object>)instance;
             var newKey = (global::System.String)key;
@@ -235,66 +235,68 @@ namespace Matching.Matching_XamlTypeInfo
             switch (typeIndex)
             {
 
-            case 0:   //  Matching.BackOfCard
-                userType = new global::Matching.Matching_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_0_BackOfCard;
+            case 0:   //  Matching.BoolToVisibilityConverter
+                userType = new global::Matching.Matching_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_0_BoolToVisibilityConverter;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 1:   //  Windows.UI.Xaml.Controls.UserControl
+            case 1:   //  Object
                 xamlType = new global::Matching.Matching_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
             case 2:   //  Matching.CircleCard
                 userType = new global::Matching.Matching_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
                 userType.Activator = Activate_2_CircleCard;
-                userType.AddMemberName("Selected");
+                userType.AddMemberName("ShowCardFront");
+                userType.AddMemberName("ShowCardBack");
                 userType.AddMemberName("CardName");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 3:   //  Boolean
+            case 3:   //  Windows.UI.Xaml.Controls.UserControl
                 xamlType = new global::Matching.Matching_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 4:   //  String
+            case 4:   //  Boolean
                 xamlType = new global::Matching.Matching_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 5:   //  Matching.DiamondCard
+            case 5:   //  String
+                xamlType = new global::Matching.Matching_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 6:   //  Matching.DiamondCard
                 userType = new global::Matching.Matching_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_5_DiamondCard;
-                userType.AddMemberName("Selected");
+                userType.Activator = Activate_6_DiamondCard;
+                userType.AddMemberName("ShowCardFront");
+                userType.AddMemberName("ShowCardBack");
                 userType.AddMemberName("CardName");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 6:   //  Matching.GameBoard
+            case 7:   //  Matching.GameBoard
                 userType = new global::Matching.Matching_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_6_GameBoard;
+                userType.Activator = Activate_7_GameBoard;
                 userType.AddMemberName("DefaultViewModel");
                 userType.AddMemberName("NavigationHelper");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 7:   //  Windows.UI.Xaml.Controls.Page
+            case 8:   //  Windows.UI.Xaml.Controls.Page
                 xamlType = new global::Matching.Matching_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 8:   //  Matching.Common.ObservableDictionary
+            case 9:   //  Matching.Common.ObservableDictionary
                 userType = new global::Matching.Matching_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.DictionaryAdd = MapAdd_8_ObservableDictionary;
+                userType.DictionaryAdd = MapAdd_9_ObservableDictionary;
                 userType.SetIsReturnTypeStub();
                 userType.SetIsLocalType();
                 xamlType = userType;
-                break;
-
-            case 9:   //  Object
-                xamlType = new global::Matching.Matching_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
             case 10:   //  Matching.Common.NavigationHelper
@@ -311,7 +313,8 @@ namespace Matching.Matching_XamlTypeInfo
             case 12:   //  Matching.HexagonCard
                 userType = new global::Matching.Matching_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
                 userType.Activator = Activate_12_HexagonCard;
-                userType.AddMemberName("Selected");
+                userType.AddMemberName("ShowCardFront");
+                userType.AddMemberName("ShowCardBack");
                 userType.AddMemberName("CardName");
                 userType.SetIsLocalType();
                 xamlType = userType;
@@ -327,7 +330,8 @@ namespace Matching.Matching_XamlTypeInfo
             case 14:   //  Matching.MoonCard
                 userType = new global::Matching.Matching_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
                 userType.Activator = Activate_14_MoonCard;
-                userType.AddMemberName("Selected");
+                userType.AddMemberName("ShowCardFront");
+                userType.AddMemberName("ShowCardBack");
                 userType.AddMemberName("CardName");
                 userType.SetIsLocalType();
                 xamlType = userType;
@@ -336,7 +340,8 @@ namespace Matching.Matching_XamlTypeInfo
             case 15:   //  Matching.ParallelogramCard
                 userType = new global::Matching.Matching_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
                 userType.Activator = Activate_15_ParallelogramCard;
-                userType.AddMemberName("Selected");
+                userType.AddMemberName("ShowCardFront");
+                userType.AddMemberName("ShowCardBack");
                 userType.AddMemberName("CardName");
                 userType.SetIsLocalType();
                 xamlType = userType;
@@ -345,7 +350,8 @@ namespace Matching.Matching_XamlTypeInfo
             case 16:   //  Matching.PentagonCard
                 userType = new global::Matching.Matching_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
                 userType.Activator = Activate_16_PentagonCard;
-                userType.AddMemberName("Selected");
+                userType.AddMemberName("ShowCardFront");
+                userType.AddMemberName("ShowCardBack");
                 userType.AddMemberName("CardName");
                 userType.SetIsLocalType();
                 xamlType = userType;
@@ -354,7 +360,8 @@ namespace Matching.Matching_XamlTypeInfo
             case 17:   //  Matching.SquareCard
                 userType = new global::Matching.Matching_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
                 userType.Activator = Activate_17_SquareCard;
-                userType.AddMemberName("Selected");
+                userType.AddMemberName("ShowCardFront");
+                userType.AddMemberName("ShowCardBack");
                 userType.AddMemberName("CardName");
                 userType.SetIsLocalType();
                 xamlType = userType;
@@ -363,7 +370,8 @@ namespace Matching.Matching_XamlTypeInfo
             case 18:   //  Matching.StarCard
                 userType = new global::Matching.Matching_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
                 userType.Activator = Activate_18_StarCard;
-                userType.AddMemberName("Selected");
+                userType.AddMemberName("ShowCardFront");
+                userType.AddMemberName("ShowCardBack");
                 userType.AddMemberName("CardName");
                 userType.SetIsLocalType();
                 xamlType = userType;
@@ -372,7 +380,8 @@ namespace Matching.Matching_XamlTypeInfo
             case 19:   //  Matching.TrapezoidCard
                 userType = new global::Matching.Matching_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
                 userType.Activator = Activate_19_TrapezoidCard;
-                userType.AddMemberName("Selected");
+                userType.AddMemberName("ShowCardFront");
+                userType.AddMemberName("ShowCardBack");
                 userType.AddMemberName("CardName");
                 userType.SetIsLocalType();
                 xamlType = userType;
@@ -381,7 +390,8 @@ namespace Matching.Matching_XamlTypeInfo
             case 20:   //  Matching.TriangleCard
                 userType = new global::Matching.Matching_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
                 userType.Activator = Activate_20_TriangleCard;
-                userType.AddMemberName("Selected");
+                userType.AddMemberName("ShowCardFront");
+                userType.AddMemberName("ShowCardBack");
                 userType.AddMemberName("CardName");
                 userType.SetIsLocalType();
                 xamlType = userType;
@@ -391,162 +401,267 @@ namespace Matching.Matching_XamlTypeInfo
         }
 
 
-        private object get_0_CircleCard_Selected(object instance)
+        private object get_0_CircleCard_ShowCardFront(object instance)
         {
             var that = (global::Matching.CircleCard)instance;
-            return that.Selected;
+            return that.ShowCardFront;
         }
-        private void set_0_CircleCard_Selected(object instance, object Value)
+        private void set_0_CircleCard_ShowCardFront(object instance, object Value)
         {
             var that = (global::Matching.CircleCard)instance;
-            that.Selected = (global::System.Boolean)Value;
+            that.ShowCardFront = (global::System.Boolean)Value;
         }
-        private object get_1_CircleCard_CardName(object instance)
+        private object get_1_CircleCard_ShowCardBack(object instance)
+        {
+            var that = (global::Matching.CircleCard)instance;
+            return that.ShowCardBack;
+        }
+        private void set_1_CircleCard_ShowCardBack(object instance, object Value)
+        {
+            var that = (global::Matching.CircleCard)instance;
+            that.ShowCardBack = (global::System.Boolean)Value;
+        }
+        private object get_2_CircleCard_CardName(object instance)
         {
             var that = (global::Matching.CircleCard)instance;
             return that.CardName;
         }
-        private object get_2_DiamondCard_Selected(object instance)
+        private object get_3_DiamondCard_ShowCardFront(object instance)
         {
             var that = (global::Matching.DiamondCard)instance;
-            return that.Selected;
+            return that.ShowCardFront;
         }
-        private void set_2_DiamondCard_Selected(object instance, object Value)
+        private void set_3_DiamondCard_ShowCardFront(object instance, object Value)
         {
             var that = (global::Matching.DiamondCard)instance;
-            that.Selected = (global::System.Boolean)Value;
+            that.ShowCardFront = (global::System.Boolean)Value;
         }
-        private object get_3_DiamondCard_CardName(object instance)
+        private object get_4_DiamondCard_ShowCardBack(object instance)
+        {
+            var that = (global::Matching.DiamondCard)instance;
+            return that.ShowCardBack;
+        }
+        private void set_4_DiamondCard_ShowCardBack(object instance, object Value)
+        {
+            var that = (global::Matching.DiamondCard)instance;
+            that.ShowCardBack = (global::System.Boolean)Value;
+        }
+        private object get_5_DiamondCard_CardName(object instance)
         {
             var that = (global::Matching.DiamondCard)instance;
             return that.CardName;
         }
-        private object get_4_GameBoard_DefaultViewModel(object instance)
+        private void set_5_DiamondCard_CardName(object instance, object Value)
+        {
+            var that = (global::Matching.DiamondCard)instance;
+            that.CardName = (global::System.String)Value;
+        }
+        private object get_6_GameBoard_DefaultViewModel(object instance)
         {
             var that = (global::Matching.GameBoard)instance;
             return that.DefaultViewModel;
         }
-        private object get_5_GameBoard_NavigationHelper(object instance)
+        private object get_7_GameBoard_NavigationHelper(object instance)
         {
             var that = (global::Matching.GameBoard)instance;
             return that.NavigationHelper;
         }
-        private object get_6_HexagonCard_Selected(object instance)
+        private object get_8_HexagonCard_ShowCardFront(object instance)
         {
             var that = (global::Matching.HexagonCard)instance;
-            return that.Selected;
+            return that.ShowCardFront;
         }
-        private void set_6_HexagonCard_Selected(object instance, object Value)
+        private void set_8_HexagonCard_ShowCardFront(object instance, object Value)
         {
             var that = (global::Matching.HexagonCard)instance;
-            that.Selected = (global::System.Boolean)Value;
+            that.ShowCardFront = (global::System.Boolean)Value;
         }
-        private object get_7_HexagonCard_CardName(object instance)
+        private object get_9_HexagonCard_ShowCardBack(object instance)
+        {
+            var that = (global::Matching.HexagonCard)instance;
+            return that.ShowCardBack;
+        }
+        private void set_9_HexagonCard_ShowCardBack(object instance, object Value)
+        {
+            var that = (global::Matching.HexagonCard)instance;
+            that.ShowCardBack = (global::System.Boolean)Value;
+        }
+        private object get_10_HexagonCard_CardName(object instance)
         {
             var that = (global::Matching.HexagonCard)instance;
             return that.CardName;
         }
-        private object get_8_MoonCard_Selected(object instance)
+        private object get_11_MoonCard_ShowCardFront(object instance)
         {
             var that = (global::Matching.MoonCard)instance;
-            return that.Selected;
+            return that.ShowCardFront;
         }
-        private void set_8_MoonCard_Selected(object instance, object Value)
+        private void set_11_MoonCard_ShowCardFront(object instance, object Value)
         {
             var that = (global::Matching.MoonCard)instance;
-            that.Selected = (global::System.Boolean)Value;
+            that.ShowCardFront = (global::System.Boolean)Value;
         }
-        private object get_9_MoonCard_CardName(object instance)
+        private object get_12_MoonCard_ShowCardBack(object instance)
+        {
+            var that = (global::Matching.MoonCard)instance;
+            return that.ShowCardBack;
+        }
+        private void set_12_MoonCard_ShowCardBack(object instance, object Value)
+        {
+            var that = (global::Matching.MoonCard)instance;
+            that.ShowCardBack = (global::System.Boolean)Value;
+        }
+        private object get_13_MoonCard_CardName(object instance)
         {
             var that = (global::Matching.MoonCard)instance;
             return that.CardName;
         }
-        private object get_10_ParallelogramCard_Selected(object instance)
+        private object get_14_ParallelogramCard_ShowCardFront(object instance)
         {
             var that = (global::Matching.ParallelogramCard)instance;
-            return that.Selected;
+            return that.ShowCardFront;
         }
-        private void set_10_ParallelogramCard_Selected(object instance, object Value)
+        private void set_14_ParallelogramCard_ShowCardFront(object instance, object Value)
         {
             var that = (global::Matching.ParallelogramCard)instance;
-            that.Selected = (global::System.Boolean)Value;
+            that.ShowCardFront = (global::System.Boolean)Value;
         }
-        private object get_11_ParallelogramCard_CardName(object instance)
+        private object get_15_ParallelogramCard_ShowCardBack(object instance)
+        {
+            var that = (global::Matching.ParallelogramCard)instance;
+            return that.ShowCardBack;
+        }
+        private void set_15_ParallelogramCard_ShowCardBack(object instance, object Value)
+        {
+            var that = (global::Matching.ParallelogramCard)instance;
+            that.ShowCardBack = (global::System.Boolean)Value;
+        }
+        private object get_16_ParallelogramCard_CardName(object instance)
         {
             var that = (global::Matching.ParallelogramCard)instance;
             return that.CardName;
         }
-        private object get_12_PentagonCard_Selected(object instance)
+        private object get_17_PentagonCard_ShowCardFront(object instance)
         {
             var that = (global::Matching.PentagonCard)instance;
-            return that.Selected;
+            return that.ShowCardFront;
         }
-        private void set_12_PentagonCard_Selected(object instance, object Value)
+        private void set_17_PentagonCard_ShowCardFront(object instance, object Value)
         {
             var that = (global::Matching.PentagonCard)instance;
-            that.Selected = (global::System.Boolean)Value;
+            that.ShowCardFront = (global::System.Boolean)Value;
         }
-        private object get_13_PentagonCard_CardName(object instance)
+        private object get_18_PentagonCard_ShowCardBack(object instance)
+        {
+            var that = (global::Matching.PentagonCard)instance;
+            return that.ShowCardBack;
+        }
+        private void set_18_PentagonCard_ShowCardBack(object instance, object Value)
+        {
+            var that = (global::Matching.PentagonCard)instance;
+            that.ShowCardBack = (global::System.Boolean)Value;
+        }
+        private object get_19_PentagonCard_CardName(object instance)
         {
             var that = (global::Matching.PentagonCard)instance;
             return that.CardName;
         }
-        private object get_14_SquareCard_Selected(object instance)
+        private object get_20_SquareCard_ShowCardFront(object instance)
         {
             var that = (global::Matching.SquareCard)instance;
-            return that.Selected;
+            return that.ShowCardFront;
         }
-        private void set_14_SquareCard_Selected(object instance, object Value)
+        private void set_20_SquareCard_ShowCardFront(object instance, object Value)
         {
             var that = (global::Matching.SquareCard)instance;
-            that.Selected = (global::System.Boolean)Value;
+            that.ShowCardFront = (global::System.Boolean)Value;
         }
-        private object get_15_SquareCard_CardName(object instance)
+        private object get_21_SquareCard_ShowCardBack(object instance)
+        {
+            var that = (global::Matching.SquareCard)instance;
+            return that.ShowCardBack;
+        }
+        private void set_21_SquareCard_ShowCardBack(object instance, object Value)
+        {
+            var that = (global::Matching.SquareCard)instance;
+            that.ShowCardBack = (global::System.Boolean)Value;
+        }
+        private object get_22_SquareCard_CardName(object instance)
         {
             var that = (global::Matching.SquareCard)instance;
             return that.CardName;
         }
-        private object get_16_StarCard_Selected(object instance)
+        private object get_23_StarCard_ShowCardFront(object instance)
         {
             var that = (global::Matching.StarCard)instance;
-            return that.Selected;
+            return that.ShowCardFront;
         }
-        private void set_16_StarCard_Selected(object instance, object Value)
+        private void set_23_StarCard_ShowCardFront(object instance, object Value)
         {
             var that = (global::Matching.StarCard)instance;
-            that.Selected = (global::System.Boolean)Value;
+            that.ShowCardFront = (global::System.Boolean)Value;
         }
-        private object get_17_StarCard_CardName(object instance)
+        private object get_24_StarCard_ShowCardBack(object instance)
+        {
+            var that = (global::Matching.StarCard)instance;
+            return that.ShowCardBack;
+        }
+        private void set_24_StarCard_ShowCardBack(object instance, object Value)
+        {
+            var that = (global::Matching.StarCard)instance;
+            that.ShowCardBack = (global::System.Boolean)Value;
+        }
+        private object get_25_StarCard_CardName(object instance)
         {
             var that = (global::Matching.StarCard)instance;
             return that.CardName;
         }
-        private object get_18_TrapezoidCard_Selected(object instance)
+        private object get_26_TrapezoidCard_ShowCardFront(object instance)
         {
             var that = (global::Matching.TrapezoidCard)instance;
-            return that.Selected;
+            return that.ShowCardFront;
         }
-        private void set_18_TrapezoidCard_Selected(object instance, object Value)
+        private void set_26_TrapezoidCard_ShowCardFront(object instance, object Value)
         {
             var that = (global::Matching.TrapezoidCard)instance;
-            that.Selected = (global::System.Boolean)Value;
+            that.ShowCardFront = (global::System.Boolean)Value;
         }
-        private object get_19_TrapezoidCard_CardName(object instance)
+        private object get_27_TrapezoidCard_ShowCardBack(object instance)
+        {
+            var that = (global::Matching.TrapezoidCard)instance;
+            return that.ShowCardBack;
+        }
+        private void set_27_TrapezoidCard_ShowCardBack(object instance, object Value)
+        {
+            var that = (global::Matching.TrapezoidCard)instance;
+            that.ShowCardBack = (global::System.Boolean)Value;
+        }
+        private object get_28_TrapezoidCard_CardName(object instance)
         {
             var that = (global::Matching.TrapezoidCard)instance;
             return that.CardName;
         }
-        private object get_20_TriangleCard_Selected(object instance)
+        private object get_29_TriangleCard_ShowCardFront(object instance)
         {
             var that = (global::Matching.TriangleCard)instance;
-            return that.Selected;
+            return that.ShowCardFront;
         }
-        private void set_20_TriangleCard_Selected(object instance, object Value)
+        private void set_29_TriangleCard_ShowCardFront(object instance, object Value)
         {
             var that = (global::Matching.TriangleCard)instance;
-            that.Selected = (global::System.Boolean)Value;
+            that.ShowCardFront = (global::System.Boolean)Value;
         }
-        private object get_21_TriangleCard_CardName(object instance)
+        private object get_30_TriangleCard_ShowCardBack(object instance)
+        {
+            var that = (global::Matching.TriangleCard)instance;
+            return that.ShowCardBack;
+        }
+        private void set_30_TriangleCard_ShowCardBack(object instance, object Value)
+        {
+            var that = (global::Matching.TriangleCard)instance;
+            that.ShowCardBack = (global::System.Boolean)Value;
+        }
+        private object get_31_TriangleCard_CardName(object instance)
         {
             var that = (global::Matching.TriangleCard)instance;
             return that.CardName;
@@ -559,136 +674,196 @@ namespace Matching.Matching_XamlTypeInfo
 
             switch (longMemberName)
             {
-            case "Matching.CircleCard.Selected":
+            case "Matching.CircleCard.ShowCardFront":
                 userType = (global::Matching.Matching_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Matching.CircleCard");
-                xamlMember = new global::Matching.Matching_XamlTypeInfo.XamlMember(this, "Selected", "Boolean");
-                xamlMember.Getter = get_0_CircleCard_Selected;
-                xamlMember.Setter = set_0_CircleCard_Selected;
+                xamlMember = new global::Matching.Matching_XamlTypeInfo.XamlMember(this, "ShowCardFront", "Boolean");
+                xamlMember.Getter = get_0_CircleCard_ShowCardFront;
+                xamlMember.Setter = set_0_CircleCard_ShowCardFront;
+                break;
+            case "Matching.CircleCard.ShowCardBack":
+                userType = (global::Matching.Matching_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Matching.CircleCard");
+                xamlMember = new global::Matching.Matching_XamlTypeInfo.XamlMember(this, "ShowCardBack", "Boolean");
+                xamlMember.Getter = get_1_CircleCard_ShowCardBack;
+                xamlMember.Setter = set_1_CircleCard_ShowCardBack;
                 break;
             case "Matching.CircleCard.CardName":
                 userType = (global::Matching.Matching_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Matching.CircleCard");
                 xamlMember = new global::Matching.Matching_XamlTypeInfo.XamlMember(this, "CardName", "String");
-                xamlMember.Getter = get_1_CircleCard_CardName;
+                xamlMember.Getter = get_2_CircleCard_CardName;
                 xamlMember.SetIsReadOnly();
                 break;
-            case "Matching.DiamondCard.Selected":
+            case "Matching.DiamondCard.ShowCardFront":
                 userType = (global::Matching.Matching_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Matching.DiamondCard");
-                xamlMember = new global::Matching.Matching_XamlTypeInfo.XamlMember(this, "Selected", "Boolean");
-                xamlMember.Getter = get_2_DiamondCard_Selected;
-                xamlMember.Setter = set_2_DiamondCard_Selected;
+                xamlMember = new global::Matching.Matching_XamlTypeInfo.XamlMember(this, "ShowCardFront", "Boolean");
+                xamlMember.Getter = get_3_DiamondCard_ShowCardFront;
+                xamlMember.Setter = set_3_DiamondCard_ShowCardFront;
+                break;
+            case "Matching.DiamondCard.ShowCardBack":
+                userType = (global::Matching.Matching_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Matching.DiamondCard");
+                xamlMember = new global::Matching.Matching_XamlTypeInfo.XamlMember(this, "ShowCardBack", "Boolean");
+                xamlMember.Getter = get_4_DiamondCard_ShowCardBack;
+                xamlMember.Setter = set_4_DiamondCard_ShowCardBack;
                 break;
             case "Matching.DiamondCard.CardName":
                 userType = (global::Matching.Matching_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Matching.DiamondCard");
                 xamlMember = new global::Matching.Matching_XamlTypeInfo.XamlMember(this, "CardName", "String");
-                xamlMember.Getter = get_3_DiamondCard_CardName;
-                xamlMember.SetIsReadOnly();
+                xamlMember.Getter = get_5_DiamondCard_CardName;
+                xamlMember.Setter = set_5_DiamondCard_CardName;
                 break;
             case "Matching.GameBoard.DefaultViewModel":
                 userType = (global::Matching.Matching_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Matching.GameBoard");
                 xamlMember = new global::Matching.Matching_XamlTypeInfo.XamlMember(this, "DefaultViewModel", "Matching.Common.ObservableDictionary");
-                xamlMember.Getter = get_4_GameBoard_DefaultViewModel;
+                xamlMember.Getter = get_6_GameBoard_DefaultViewModel;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Matching.GameBoard.NavigationHelper":
                 userType = (global::Matching.Matching_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Matching.GameBoard");
                 xamlMember = new global::Matching.Matching_XamlTypeInfo.XamlMember(this, "NavigationHelper", "Matching.Common.NavigationHelper");
-                xamlMember.Getter = get_5_GameBoard_NavigationHelper;
+                xamlMember.Getter = get_7_GameBoard_NavigationHelper;
                 xamlMember.SetIsReadOnly();
                 break;
-            case "Matching.HexagonCard.Selected":
+            case "Matching.HexagonCard.ShowCardFront":
                 userType = (global::Matching.Matching_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Matching.HexagonCard");
-                xamlMember = new global::Matching.Matching_XamlTypeInfo.XamlMember(this, "Selected", "Boolean");
-                xamlMember.Getter = get_6_HexagonCard_Selected;
-                xamlMember.Setter = set_6_HexagonCard_Selected;
+                xamlMember = new global::Matching.Matching_XamlTypeInfo.XamlMember(this, "ShowCardFront", "Boolean");
+                xamlMember.Getter = get_8_HexagonCard_ShowCardFront;
+                xamlMember.Setter = set_8_HexagonCard_ShowCardFront;
+                break;
+            case "Matching.HexagonCard.ShowCardBack":
+                userType = (global::Matching.Matching_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Matching.HexagonCard");
+                xamlMember = new global::Matching.Matching_XamlTypeInfo.XamlMember(this, "ShowCardBack", "Boolean");
+                xamlMember.Getter = get_9_HexagonCard_ShowCardBack;
+                xamlMember.Setter = set_9_HexagonCard_ShowCardBack;
                 break;
             case "Matching.HexagonCard.CardName":
                 userType = (global::Matching.Matching_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Matching.HexagonCard");
                 xamlMember = new global::Matching.Matching_XamlTypeInfo.XamlMember(this, "CardName", "String");
-                xamlMember.Getter = get_7_HexagonCard_CardName;
+                xamlMember.Getter = get_10_HexagonCard_CardName;
                 xamlMember.SetIsReadOnly();
                 break;
-            case "Matching.MoonCard.Selected":
+            case "Matching.MoonCard.ShowCardFront":
                 userType = (global::Matching.Matching_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Matching.MoonCard");
-                xamlMember = new global::Matching.Matching_XamlTypeInfo.XamlMember(this, "Selected", "Boolean");
-                xamlMember.Getter = get_8_MoonCard_Selected;
-                xamlMember.Setter = set_8_MoonCard_Selected;
+                xamlMember = new global::Matching.Matching_XamlTypeInfo.XamlMember(this, "ShowCardFront", "Boolean");
+                xamlMember.Getter = get_11_MoonCard_ShowCardFront;
+                xamlMember.Setter = set_11_MoonCard_ShowCardFront;
+                break;
+            case "Matching.MoonCard.ShowCardBack":
+                userType = (global::Matching.Matching_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Matching.MoonCard");
+                xamlMember = new global::Matching.Matching_XamlTypeInfo.XamlMember(this, "ShowCardBack", "Boolean");
+                xamlMember.Getter = get_12_MoonCard_ShowCardBack;
+                xamlMember.Setter = set_12_MoonCard_ShowCardBack;
                 break;
             case "Matching.MoonCard.CardName":
                 userType = (global::Matching.Matching_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Matching.MoonCard");
                 xamlMember = new global::Matching.Matching_XamlTypeInfo.XamlMember(this, "CardName", "String");
-                xamlMember.Getter = get_9_MoonCard_CardName;
+                xamlMember.Getter = get_13_MoonCard_CardName;
                 xamlMember.SetIsReadOnly();
                 break;
-            case "Matching.ParallelogramCard.Selected":
+            case "Matching.ParallelogramCard.ShowCardFront":
                 userType = (global::Matching.Matching_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Matching.ParallelogramCard");
-                xamlMember = new global::Matching.Matching_XamlTypeInfo.XamlMember(this, "Selected", "Boolean");
-                xamlMember.Getter = get_10_ParallelogramCard_Selected;
-                xamlMember.Setter = set_10_ParallelogramCard_Selected;
+                xamlMember = new global::Matching.Matching_XamlTypeInfo.XamlMember(this, "ShowCardFront", "Boolean");
+                xamlMember.Getter = get_14_ParallelogramCard_ShowCardFront;
+                xamlMember.Setter = set_14_ParallelogramCard_ShowCardFront;
+                break;
+            case "Matching.ParallelogramCard.ShowCardBack":
+                userType = (global::Matching.Matching_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Matching.ParallelogramCard");
+                xamlMember = new global::Matching.Matching_XamlTypeInfo.XamlMember(this, "ShowCardBack", "Boolean");
+                xamlMember.Getter = get_15_ParallelogramCard_ShowCardBack;
+                xamlMember.Setter = set_15_ParallelogramCard_ShowCardBack;
                 break;
             case "Matching.ParallelogramCard.CardName":
                 userType = (global::Matching.Matching_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Matching.ParallelogramCard");
                 xamlMember = new global::Matching.Matching_XamlTypeInfo.XamlMember(this, "CardName", "String");
-                xamlMember.Getter = get_11_ParallelogramCard_CardName;
+                xamlMember.Getter = get_16_ParallelogramCard_CardName;
                 xamlMember.SetIsReadOnly();
                 break;
-            case "Matching.PentagonCard.Selected":
+            case "Matching.PentagonCard.ShowCardFront":
                 userType = (global::Matching.Matching_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Matching.PentagonCard");
-                xamlMember = new global::Matching.Matching_XamlTypeInfo.XamlMember(this, "Selected", "Boolean");
-                xamlMember.Getter = get_12_PentagonCard_Selected;
-                xamlMember.Setter = set_12_PentagonCard_Selected;
+                xamlMember = new global::Matching.Matching_XamlTypeInfo.XamlMember(this, "ShowCardFront", "Boolean");
+                xamlMember.Getter = get_17_PentagonCard_ShowCardFront;
+                xamlMember.Setter = set_17_PentagonCard_ShowCardFront;
+                break;
+            case "Matching.PentagonCard.ShowCardBack":
+                userType = (global::Matching.Matching_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Matching.PentagonCard");
+                xamlMember = new global::Matching.Matching_XamlTypeInfo.XamlMember(this, "ShowCardBack", "Boolean");
+                xamlMember.Getter = get_18_PentagonCard_ShowCardBack;
+                xamlMember.Setter = set_18_PentagonCard_ShowCardBack;
                 break;
             case "Matching.PentagonCard.CardName":
                 userType = (global::Matching.Matching_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Matching.PentagonCard");
                 xamlMember = new global::Matching.Matching_XamlTypeInfo.XamlMember(this, "CardName", "String");
-                xamlMember.Getter = get_13_PentagonCard_CardName;
+                xamlMember.Getter = get_19_PentagonCard_CardName;
                 xamlMember.SetIsReadOnly();
                 break;
-            case "Matching.SquareCard.Selected":
+            case "Matching.SquareCard.ShowCardFront":
                 userType = (global::Matching.Matching_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Matching.SquareCard");
-                xamlMember = new global::Matching.Matching_XamlTypeInfo.XamlMember(this, "Selected", "Boolean");
-                xamlMember.Getter = get_14_SquareCard_Selected;
-                xamlMember.Setter = set_14_SquareCard_Selected;
+                xamlMember = new global::Matching.Matching_XamlTypeInfo.XamlMember(this, "ShowCardFront", "Boolean");
+                xamlMember.Getter = get_20_SquareCard_ShowCardFront;
+                xamlMember.Setter = set_20_SquareCard_ShowCardFront;
+                break;
+            case "Matching.SquareCard.ShowCardBack":
+                userType = (global::Matching.Matching_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Matching.SquareCard");
+                xamlMember = new global::Matching.Matching_XamlTypeInfo.XamlMember(this, "ShowCardBack", "Boolean");
+                xamlMember.Getter = get_21_SquareCard_ShowCardBack;
+                xamlMember.Setter = set_21_SquareCard_ShowCardBack;
                 break;
             case "Matching.SquareCard.CardName":
                 userType = (global::Matching.Matching_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Matching.SquareCard");
                 xamlMember = new global::Matching.Matching_XamlTypeInfo.XamlMember(this, "CardName", "String");
-                xamlMember.Getter = get_15_SquareCard_CardName;
+                xamlMember.Getter = get_22_SquareCard_CardName;
                 xamlMember.SetIsReadOnly();
                 break;
-            case "Matching.StarCard.Selected":
+            case "Matching.StarCard.ShowCardFront":
                 userType = (global::Matching.Matching_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Matching.StarCard");
-                xamlMember = new global::Matching.Matching_XamlTypeInfo.XamlMember(this, "Selected", "Boolean");
-                xamlMember.Getter = get_16_StarCard_Selected;
-                xamlMember.Setter = set_16_StarCard_Selected;
+                xamlMember = new global::Matching.Matching_XamlTypeInfo.XamlMember(this, "ShowCardFront", "Boolean");
+                xamlMember.Getter = get_23_StarCard_ShowCardFront;
+                xamlMember.Setter = set_23_StarCard_ShowCardFront;
+                break;
+            case "Matching.StarCard.ShowCardBack":
+                userType = (global::Matching.Matching_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Matching.StarCard");
+                xamlMember = new global::Matching.Matching_XamlTypeInfo.XamlMember(this, "ShowCardBack", "Boolean");
+                xamlMember.Getter = get_24_StarCard_ShowCardBack;
+                xamlMember.Setter = set_24_StarCard_ShowCardBack;
                 break;
             case "Matching.StarCard.CardName":
                 userType = (global::Matching.Matching_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Matching.StarCard");
                 xamlMember = new global::Matching.Matching_XamlTypeInfo.XamlMember(this, "CardName", "String");
-                xamlMember.Getter = get_17_StarCard_CardName;
+                xamlMember.Getter = get_25_StarCard_CardName;
                 xamlMember.SetIsReadOnly();
                 break;
-            case "Matching.TrapezoidCard.Selected":
+            case "Matching.TrapezoidCard.ShowCardFront":
                 userType = (global::Matching.Matching_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Matching.TrapezoidCard");
-                xamlMember = new global::Matching.Matching_XamlTypeInfo.XamlMember(this, "Selected", "Boolean");
-                xamlMember.Getter = get_18_TrapezoidCard_Selected;
-                xamlMember.Setter = set_18_TrapezoidCard_Selected;
+                xamlMember = new global::Matching.Matching_XamlTypeInfo.XamlMember(this, "ShowCardFront", "Boolean");
+                xamlMember.Getter = get_26_TrapezoidCard_ShowCardFront;
+                xamlMember.Setter = set_26_TrapezoidCard_ShowCardFront;
+                break;
+            case "Matching.TrapezoidCard.ShowCardBack":
+                userType = (global::Matching.Matching_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Matching.TrapezoidCard");
+                xamlMember = new global::Matching.Matching_XamlTypeInfo.XamlMember(this, "ShowCardBack", "Boolean");
+                xamlMember.Getter = get_27_TrapezoidCard_ShowCardBack;
+                xamlMember.Setter = set_27_TrapezoidCard_ShowCardBack;
                 break;
             case "Matching.TrapezoidCard.CardName":
                 userType = (global::Matching.Matching_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Matching.TrapezoidCard");
                 xamlMember = new global::Matching.Matching_XamlTypeInfo.XamlMember(this, "CardName", "String");
-                xamlMember.Getter = get_19_TrapezoidCard_CardName;
+                xamlMember.Getter = get_28_TrapezoidCard_CardName;
                 xamlMember.SetIsReadOnly();
                 break;
-            case "Matching.TriangleCard.Selected":
+            case "Matching.TriangleCard.ShowCardFront":
                 userType = (global::Matching.Matching_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Matching.TriangleCard");
-                xamlMember = new global::Matching.Matching_XamlTypeInfo.XamlMember(this, "Selected", "Boolean");
-                xamlMember.Getter = get_20_TriangleCard_Selected;
-                xamlMember.Setter = set_20_TriangleCard_Selected;
+                xamlMember = new global::Matching.Matching_XamlTypeInfo.XamlMember(this, "ShowCardFront", "Boolean");
+                xamlMember.Getter = get_29_TriangleCard_ShowCardFront;
+                xamlMember.Setter = set_29_TriangleCard_ShowCardFront;
+                break;
+            case "Matching.TriangleCard.ShowCardBack":
+                userType = (global::Matching.Matching_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Matching.TriangleCard");
+                xamlMember = new global::Matching.Matching_XamlTypeInfo.XamlMember(this, "ShowCardBack", "Boolean");
+                xamlMember.Getter = get_30_TriangleCard_ShowCardBack;
+                xamlMember.Setter = set_30_TriangleCard_ShowCardBack;
                 break;
             case "Matching.TriangleCard.CardName":
                 userType = (global::Matching.Matching_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Matching.TriangleCard");
                 xamlMember = new global::Matching.Matching_XamlTypeInfo.XamlMember(this, "CardName", "String");
-                xamlMember.Getter = get_21_TriangleCard_CardName;
+                xamlMember.Getter = get_31_TriangleCard_CardName;
                 xamlMember.SetIsReadOnly();
                 break;
             }
@@ -1016,5 +1191,6 @@ namespace Matching.Matching_XamlTypeInfo
         }
     }
 }
+
 
 

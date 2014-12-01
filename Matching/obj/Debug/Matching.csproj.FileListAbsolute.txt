@@ -85,8 +85,3 @@ D:\Software Projects\Matching\Matching\obj\Debug\ParallelogramCard.g.i.cs
 D:\Software Projects\Matching\Matching\obj\Debug\ParallelogramCard.g.cs
 D:\Software Projects\Matching\Matching\obj\Debug\ParallelogramCard.xaml
 D:\Software Projects\Matching\Matching\obj\Debug\ParallelogramCard.xbf
-D:\Software Projects\Matching\Matching\bin\Debug\BackOfCard.xbf
-D:\Software Projects\Matching\Matching\obj\Debug\BackOfCard.g.i.cs
-D:\Software Projects\Matching\Matching\obj\Debug\BackOfCard.g.cs
-D:\Software Projects\Matching\Matching\obj\Debug\BackOfCard.xaml
-D:\Software Projects\Matching\Matching\obj\Debug\BackOfCard.xbf

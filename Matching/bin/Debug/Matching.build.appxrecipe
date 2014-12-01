@@ -38,9 +38,6 @@
     <AppxPackagedFile Include="D:\Software Projects\Matching\Matching\bin\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Software Projects\Matching\Matching\bin\Debug\BackOfCard.xbf">
-      <PackagePath>BackOfCard.xbf</PackagePath>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Software Projects\Matching\Matching\bin\Debug\CircleCard.xbf">
       <PackagePath>CircleCard.xbf</PackagePath>
     </AppxPackagedFile>

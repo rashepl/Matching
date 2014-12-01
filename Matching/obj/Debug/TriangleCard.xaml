@@ -1,4 +1,4 @@
-﻿<UserControl
+﻿<UserControl x:Name="_triangleCard"
     x:Class="Matching.TriangleCard"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -9,10 +9,14 @@
     d:DesignHeight="300"
     d:DesignWidth="400" Margin="5">
 
+    <UserControl.Resources>
+        <local:BoolToVisibilityConverter x:Key="boolToVisibilityConverter"/>
+    </UserControl.Resources>
+    
     <Grid Background="#FF96DE81">
         <Border BorderBrush="Black" BorderThickness="5">
             <Viewbox Stretch="Fill">
-                <Polygon Points="200,10 10,280 380,280" StrokeThickness="5" Stroke="Black" Width="390" Height="290">
+                <Polygon Points="200,10 10,280 380,280" StrokeThickness="5" Stroke="Black" Width="390" Height="290" Visibility="{Binding ShowCardFront, Converter={StaticResource boolToVisibilityConverter}, ElementName=_triangleCard}">
                     <Polygon.Fill>
                         <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                             <GradientStop Color="#FFEEE8AB" Offset="0"/>
@@ -22,6 +26,9 @@
                 </Polygon>
             </Viewbox>
         </Border>
+        <Viewbox x:Name="_backOfCardViewbox">
+            <TextBlock Text="Select to Flip" Foreground="Black" Margin="5,0" Visibility="{Binding ShowCardBack, Converter={StaticResource boolToVisibilityConverter}, ElementName=_triangleCard}"/>
+        </Viewbox>
     </Grid>
 </UserControl>
 

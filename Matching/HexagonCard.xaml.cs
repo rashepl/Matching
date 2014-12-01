@@ -1,36 +1,61 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Runtime.InteropServices.WindowsRuntime;
-using Windows.Foundation;
-using Windows.Foundation.Collections;
-using Windows.UI.Xaml;
+﻿using System.ComponentModel;
 using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Controls.Primitives;
-using Windows.UI.Xaml.Data;
-using Windows.UI.Xaml.Input;
-using Windows.UI.Xaml.Media;
-using Windows.UI.Xaml.Navigation;
 
 // The User Control item template is documented at http://go.microsoft.com/fwlink/?LinkId=234236
 
 namespace Matching
 {
-	public sealed partial class HexagonCard : UserControl, ICard
+	public sealed partial class HexagonCard : UserControl, ICard, INotifyPropertyChanged
 	{
+		#region events
+
+		/// <summary>
+		/// property changed event
+		/// </summary>
+		public event PropertyChangedEventHandler PropertyChanged;
+
+		#endregion
+
 		#region member variables
+
+		/// <summary>
+		/// track the state of showing the front of the card
+		/// </summary>
+		private bool _showCardFront = false;
+
+		/// <summary>
+		/// track the state of showing the back of the card
+		/// </summary>
+		private bool _showCardBack = true;
+
 		#endregion
 
 		#region properties
 
 		/// <summary>
-		/// gets/sets the selected state of the card
+		/// gets/sets the state of showing the front of the card
 		/// </summary>
-		public bool Selected
+		public bool ShowCardFront
 		{
-			get;
-			set;
+			get { return _showCardFront; }
+			set
+			{
+				_showCardFront = value;
+				NotifyPropertyChanged("ShowCardFront");
+			}
+		}
+
+		/// <summary>
+		/// gets/sets the state of showing the back of the card
+		/// </summary>
+		public bool ShowCardBack
+		{
+			get { return _showCardBack; }
+			set
+			{
+				_showCardBack = value;
+				NotifyPropertyChanged("ShowCardBack");
+			}
 		}
 
 		/// <summary>
@@ -44,16 +69,31 @@ namespace Matching
 		#endregion
 
 		#region construction / destruction
-		#endregion
 
-		#region methods
-		#endregion
-
-		#region event handlers
-		#endregion
 		public HexagonCard()
 		{
 			this.InitializeComponent();
 		}
+
+		#endregion
+
+		#region methods
+
+		/// <summary>
+		/// call the property changed event using the property name
+		/// </summary>
+		/// <param name="propertyName"></param>
+		private void NotifyPropertyChanged(string propertyName)
+		{
+			if (PropertyChanged != null)
+			{
+				PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+
+		#endregion
+
+		#region event handlers
+		#endregion
 	}
 }

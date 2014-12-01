@@ -1,4 +1,4 @@
-﻿<UserControl
+﻿<UserControl x:Name="_moonCard"
     x:Class="Matching.MoonCard"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -9,12 +9,19 @@
     d:DesignHeight="300"
     d:DesignWidth="400" Margin="5">
 
+    <UserControl.Resources>
+        <local:BoolToVisibilityConverter x:Key="boolToVisibilityConverter"/>
+    </UserControl.Resources>
+
     <Grid Background="#FF96DE81">
         <Border BorderThickness="5" BorderBrush="Black">
             <Viewbox Stretch="Fill">
-                <Path Data="M1.6378,0.5 C125.057,0.5 212.138,65.1949 212.138,145 C212.138,224.805 125.057,289.5 17.6378,289.5 C12.6025,289.5 7.61188,289.358 2.67285,289.079 L2.80356,288.754 C84.9973,281.354 149.138,219.817 149.138,145 C149.138,70.1827 84.9973,8.64588 2.80356,1.24604 L2.67285,0.921346 C7.61188,0.642152 12.6025,0.5 17.6378,0.5" Fill="#FFDA5D57" Height="290" Stretch="Fill" Stroke="Black" UseLayoutRounding="False" Width="212.638" StrokeThickness="5"/>
+                <Path Data="M1.6378,0.5 C125.057,0.5 212.138,65.1949 212.138,145 C212.138,224.805 125.057,289.5 17.6378,289.5 C12.6025,289.5 7.61188,289.358 2.67285,289.079 L2.80356,288.754 C84.9973,281.354 149.138,219.817 149.138,145 C149.138,70.1827 84.9973,8.64588 2.80356,1.24604 L2.67285,0.921346 C7.61188,0.642152 12.6025,0.5 17.6378,0.5" Fill="#FFDA5D57" Height="290" Stretch="Fill" Stroke="Black" UseLayoutRounding="False" Width="212.638" StrokeThickness="5"  Visibility="{Binding ShowCardFront, Converter={StaticResource boolToVisibilityConverter}, ElementName=_moonCard}"/>
             </Viewbox>
         </Border>
+        <Viewbox x:Name="_backOfCardViewbox">
+            <TextBlock Text="Select to Flip" Foreground="Black" Margin="5,0" Visibility="{Binding ShowCardBack, Converter={StaticResource boolToVisibilityConverter}, ElementName=_moonCard}"/>
+        </Viewbox>
     </Grid>
 </UserControl>
 

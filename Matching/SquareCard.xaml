@@ -1,4 +1,4 @@
-﻿<UserControl
+﻿<UserControl x:Name="_squareCard"
     x:Class="Matching.SquareCard"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -9,10 +9,14 @@
     d:DesignHeight="300"
     d:DesignWidth="400" Margin="5">
 
+    <UserControl.Resources>
+        <local:BoolToVisibilityConverter x:Key="boolToVisibilityConverter"/>
+    </UserControl.Resources>
+
     <Grid Background="#FF96DE81">
         <Border BorderBrush="Black" BorderThickness="5">
             <Viewbox Stretch="Fill">
-                <Rectangle Margin="10" Stroke="Black" StrokeThickness="5" Height="300" Width="400">
+                <Rectangle Margin="10" Stroke="Black" StrokeThickness="5" Height="300" Width="400"  Visibility="{Binding ShowCardFront, Converter={StaticResource boolToVisibilityConverter}, ElementName=_squareCard}">
                     <Rectangle.Fill>
                         <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                             <GradientStop Color="#FFD4AFEA" Offset="0"/>
@@ -22,5 +26,8 @@
                 </Rectangle>
             </Viewbox>
         </Border>
+        <Viewbox x:Name="_backOfCardViewbox">
+            <TextBlock Text="Select to Flip" Foreground="Black" Margin="5,0" Visibility="{Binding ShowCardBack, Converter={StaticResource boolToVisibilityConverter}, ElementName=_squareCard}"/>
+        </Viewbox>
     </Grid>
 </UserControl>

@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Windows.UI.Xaml.Controls;
-
+﻿
 namespace Matching
 {
 	public interface ICard
@@ -15,9 +9,18 @@ namespace Matching
 		#region properties
 
 		/// <summary>
-		/// gets/sets the selected state of the card
+		/// gets/sets the state of showing the back of the card
 		/// </summary>
-		bool Selected
+		bool ShowCardBack
+		{
+			get;
+			set;
+		}
+
+		/// <summary>
+		/// gets/sets the state of showing the front of the card
+		/// </summary>
+		bool ShowCardFront
 		{
 			get;
 			set;
