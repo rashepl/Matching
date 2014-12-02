@@ -27,6 +27,16 @@ namespace Matching
 		/// </summary>
 		private ObservableDictionary defaultViewModel = new ObservableDictionary();
 
+		/// <summary>
+		/// holds the player selected card
+		/// </summary>
+		private ICard _selectedCard;
+
+		/// <summary>
+		/// holds the number of matches made by the player
+		/// </summary>
+		private int _numberOfMatches;
+
 		#endregion
 
 		#region properties
@@ -46,6 +56,24 @@ namespace Matching
 		public NavigationHelper NavigationHelper
 		{
 			get { return this.navigationHelper; }
+		}
+
+		/// <summary>
+		/// gets/sets the card selected by the player
+		/// </summary>
+		private ICard SelectedCard
+		{
+			get { return _selectedCard; }
+			set { _selectedCard = value; }
+		}
+
+		/// <summary>
+		/// gets/sets the number of matches made by the player
+		/// </summary>
+		private int NumberOfMatches
+		{
+			get { return _numberOfMatches; }
+			set { _numberOfMatches = value; }
 		}
 
 		#endregion
@@ -191,9 +219,35 @@ namespace Matching
 		/// <param name="e"></param>
 		private void card_Tapped(object sender, TappedRoutedEventArgs e)
 		{
-			UserControl control = sender as UserControl;
-			(control as ICard).ShowCardBack = false;
-			(control as ICard).ShowCardFront = true;
+			ICard card = sender as ICard;
+			card.ShowCardBack = false;
+			card.ShowCardFront = true;
+
+			if (SelectedCard == null)
+			{
+				SelectedCard = card;
+			}
+			else
+			{
+				if (SelectedCard.GetType() == card.GetType())
+				{
+					// match
+					_matches.Text = string.Format("Matches: {0}", ++NumberOfMatches);
+					(SelectedCard as UserControl).Tapped -= card_Tapped;
+					(card as UserControl).Tapped -= card_Tapped;
+					SelectedCard = null;
+				}
+				else
+				{
+					SelectedCard.ShowCardBack = true;
+					SelectedCard.ShowCardFront = false;
+					SelectedCard = null;
+
+					card.ShowCardBack = true;
+					card.ShowCardFront = false;
+				}
+			}
+
 		}
 
 		#endregion
