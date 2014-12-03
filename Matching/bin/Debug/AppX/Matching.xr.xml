@@ -4,8 +4,6 @@
     <RootInterface FullName="Windows.UI.Xaml.Data.IValueConverter" />
   </Roots.Interfaces>
   <Roots.PropertyPathNames>
-    <RootPropertyPathName Name="ShowCardBack" />
-    <RootPropertyPathName Name="ShowCardFront" />
     <RootPropertyPathName Name="DefaultViewModel" />
     <RootPropertyPathName Name="NavigationHelper" />
     <RootPropertyPathName Name="GoBackCommand" />
@@ -15,11 +13,44 @@
     <RootType FullName="Windows.UI.Xaml.Controls.UserControl">
       <RootProperty Name="Margin" />
       <RootProperty Name="Resources" />
+      <RootProperty Name="RenderTransform" />
       <RootProperty Name="Content" />
     </RootType>
     <RootType FullName="Matching.BoolToVisibilityConverter" />
+    <RootType FullName="Windows.UI.Xaml.Media.Animation.Storyboard">
+      <RootProperty Name="Children" />
+      <RootMethod Name="GetTargetProperty" />
+      <RootMethod Name="SetTargetProperty" />
+      <RootMethod Name="GetTargetName" />
+      <RootMethod Name="SetTargetName" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.Animation.PointAnimationUsingKeyFrames">
+      <RootProperty Name="EnableDependentAnimation" />
+      <RootProperty Name="KeyFrames" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.Animation.ObjectAnimationUsingKeyFrames">
+      <RootProperty Name="KeyFrames" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.Animation.DoubleAnimationUsingKeyFrames">
+      <RootProperty Name="KeyFrames" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.Animation.EasingDoubleKeyFrame">
+      <RootProperty Name="KeyTime" />
+      <RootProperty Name="Value" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.Animation.DiscreteObjectKeyFrame">
+      <RootProperty Name="KeyTime" />
+      <RootProperty Name="Value" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Visibility" />
+    <RootType FullName="Windows.UI.Xaml.Media.Animation.EasingPointKeyFrame">
+      <RootProperty Name="KeyTime" />
+      <RootProperty Name="Value" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.CompositeTransform" />
     <RootType FullName="Windows.UI.Xaml.Controls.Grid">
       <RootProperty Name="Background" />
+      <RootProperty Name="RenderTransform" />
       <RootProperty Name="Children" />
       <RootProperty Name="ChildrenTransitions" />
       <RootProperty Name="RowDefinitions" />
@@ -55,12 +86,6 @@
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="TextAlignment" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Data.Binding">
-      <RootProperty Name="Converter" />
-      <RootProperty Name="ElementName" />
-      <RootProperty Name="RelativeSource" />
-    </RootType>
-    <RootType FullName="Microsoft.Xaml.Tools.DirectUI.ProxyTypes.StaticResourceExtension" />
     <RootType FullName="Windows.UI.Xaml.Shapes.Ellipse">
       <RootProperty Name="Stroke" />
       <RootProperty Name="StrokeThickness" />
@@ -95,6 +120,10 @@
       <RootProperty Name="Resources" />
       <RootProperty Name="Content" />
     </RootType>
+    <RootType FullName="Windows.UI.Xaml.Data.Binding">
+      <RootProperty Name="RelativeSource" />
+      <RootProperty Name="ElementName" />
+    </RootType>
     <RootType FullName="Windows.UI.Xaml.Data.RelativeSource" />
     <RootType FullName="System.String" />
     <RootType FullName="Microsoft.Xaml.Tools.DirectUI.ProxyTypes.ThemeResourceExtension" />
@@ -124,6 +153,7 @@
       <RootMethod Name="GetItemType" />
       <RootMethod Name="SetItemType" />
     </RootType>
+    <RootType FullName="Microsoft.Xaml.Tools.DirectUI.ProxyTypes.StaticResourceExtension" />
     <RootType FullName="Matching.GameBoard" />
     <RootType FullName="Matching.HexagonCard" />
     <RootType FullName="Matching.MainPage" />

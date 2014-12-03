@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel;
 using Windows.UI.Xaml.Controls;
+using Windows.UI.Xaml.Media.Animation;
 
 // The User Control item template is documented at http://go.microsoft.com/fwlink/?LinkId=234236
 
@@ -64,6 +65,14 @@ namespace Matching
 		public string CardName
 		{
 			get { return Name; }
+		}
+
+		/// <summary>
+		/// gets the storyboard for animating flipping the card
+		/// </summary>
+		public Storyboard FlipAnimation
+		{
+			get { return flipCardStoryboard; }
 		}
 
 		#endregion

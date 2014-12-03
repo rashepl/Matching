@@ -11,12 +11,43 @@
 
     <UserControl.Resources>
         <local:BoolToVisibilityConverter x:Key="boolToVisibilityConverter"/>
+        <Storyboard x:Name="flipCardStoryboard">
+            <PointAnimationUsingKeyFrames EnableDependentAnimation="True" Storyboard.TargetProperty="(UIElement.RenderTransformOrigin)" Storyboard.TargetName="_squareCard">
+                <EasingPointKeyFrame KeyTime="0" Value="0.5,0.5"/>
+                <EasingPointKeyFrame KeyTime="0:0:0.5" Value="0.5,0.5"/>
+            </PointAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="rectangle">
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.25">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="textBlock">
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.25">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Collapsed</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.5">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Collapsed</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.ScaleX)" Storyboard.TargetName="_squareCard">
+                <EasingDoubleKeyFrame KeyTime="0" Value="-1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
     </UserControl.Resources>
-
+    <UserControl.RenderTransform>
+        <CompositeTransform/>
+    </UserControl.RenderTransform>
     <Grid Background="#FF96DE81">
         <Border BorderBrush="Black" BorderThickness="5">
             <Viewbox Stretch="Fill">
-                <Rectangle Margin="10" Stroke="Black" StrokeThickness="5" Height="300" Width="400"  Visibility="{Binding ShowCardFront, Converter={StaticResource boolToVisibilityConverter}, ElementName=_squareCard}">
+                <Rectangle x:Name="rectangle" Margin="10" Stroke="Black" StrokeThickness="5" Height="300" Width="400"  Visibility="Collapsed">
                     <Rectangle.Fill>
                         <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                             <GradientStop Color="#FFD4AFEA" Offset="0"/>
@@ -27,7 +58,7 @@
             </Viewbox>
         </Border>
         <Viewbox x:Name="_backOfCardViewbox">
-            <TextBlock Text="Select to Flip" Foreground="Black" Margin="5,0" Visibility="{Binding ShowCardBack, Converter={StaticResource boolToVisibilityConverter}, ElementName=_squareCard}"/>
+            <TextBlock x:Name="textBlock" Text="Select to Flip" Foreground="Black" Margin="5,0" Visibility="Visible"/>
         </Viewbox>
     </Grid>
 </UserControl>

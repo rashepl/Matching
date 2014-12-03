@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel;
 using Windows.UI.Xaml.Controls;
+using Windows.UI.Xaml.Media.Animation;
 
 // The User Control item template is documented at http://go.microsoft.com/fwlink/?LinkId=234236
 
@@ -67,6 +68,14 @@ namespace Matching
 			set;
 		}
 
+		/// <summary>
+		/// gets the storyboard for animating flipping the card
+		/// </summary>
+		public Storyboard FlipAnimation
+		{
+			get { return flipCardStoryboard; }
+		}
+
 		#endregion
 
 		#region construction / destruction
@@ -78,7 +87,7 @@ namespace Matching
 		{
 			this.InitializeComponent();
 		}
-	
+
 		#endregion
 
 		#region methods

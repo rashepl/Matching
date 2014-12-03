@@ -222,6 +222,7 @@ namespace Matching
 			ICard card = sender as ICard;
 			card.ShowCardBack = false;
 			card.ShowCardFront = true;
+			card.FlipAnimation.Begin();
 
 			if (SelectedCard == null)
 			{
@@ -247,7 +248,6 @@ namespace Matching
 					card.ShowCardFront = false;
 				}
 			}
-
 		}
 
 		#endregion

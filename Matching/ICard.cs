@@ -1,4 +1,5 @@
 ﻿
+using Windows.UI.Xaml.Media.Animation;
 namespace Matching
 {
 	public interface ICard
@@ -30,6 +31,15 @@ namespace Matching
 		/// gets the name of the card
 		/// </summary>
 		string CardName
+		{
+			get;
+		}
+
+
+		/// <summary>
+		/// gets the storyboard for animating flipping the card
+		/// </summary>
+		Storyboard FlipAnimation
 		{
 			get;
 		}
