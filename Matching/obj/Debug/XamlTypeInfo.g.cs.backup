@@ -255,6 +255,8 @@ namespace Matching.Matching_XamlTypeInfo
                 userType.AddMemberName("ShowCardBack");
                 userType.AddMemberName("CardName");
                 userType.AddMemberName("FlipAnimation");
+                userType.AddMemberName("FlipToCardBack");
+                userType.AddMemberName("ShowCardsAtBeginning");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -282,6 +284,8 @@ namespace Matching.Matching_XamlTypeInfo
                 userType.AddMemberName("ShowCardBack");
                 userType.AddMemberName("CardName");
                 userType.AddMemberName("FlipAnimation");
+                userType.AddMemberName("FlipToCardBack");
+                userType.AddMemberName("ShowCardsAtBeginning");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -325,6 +329,8 @@ namespace Matching.Matching_XamlTypeInfo
                 userType.AddMemberName("ShowCardBack");
                 userType.AddMemberName("CardName");
                 userType.AddMemberName("FlipAnimation");
+                userType.AddMemberName("FlipToCardBack");
+                userType.AddMemberName("ShowCardsAtBeginning");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -343,6 +349,8 @@ namespace Matching.Matching_XamlTypeInfo
                 userType.AddMemberName("ShowCardBack");
                 userType.AddMemberName("CardName");
                 userType.AddMemberName("FlipAnimation");
+                userType.AddMemberName("FlipToCardBack");
+                userType.AddMemberName("ShowCardsAtBeginning");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -354,6 +362,8 @@ namespace Matching.Matching_XamlTypeInfo
                 userType.AddMemberName("ShowCardBack");
                 userType.AddMemberName("CardName");
                 userType.AddMemberName("FlipAnimation");
+                userType.AddMemberName("FlipToCardBack");
+                userType.AddMemberName("ShowCardsAtBeginning");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -365,6 +375,8 @@ namespace Matching.Matching_XamlTypeInfo
                 userType.AddMemberName("ShowCardBack");
                 userType.AddMemberName("CardName");
                 userType.AddMemberName("FlipAnimation");
+                userType.AddMemberName("FlipToCardBack");
+                userType.AddMemberName("ShowCardsAtBeginning");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -376,6 +388,8 @@ namespace Matching.Matching_XamlTypeInfo
                 userType.AddMemberName("ShowCardBack");
                 userType.AddMemberName("CardName");
                 userType.AddMemberName("FlipAnimation");
+                userType.AddMemberName("FlipToCardBack");
+                userType.AddMemberName("ShowCardsAtBeginning");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -387,6 +401,8 @@ namespace Matching.Matching_XamlTypeInfo
                 userType.AddMemberName("ShowCardBack");
                 userType.AddMemberName("CardName");
                 userType.AddMemberName("FlipAnimation");
+                userType.AddMemberName("FlipToCardBack");
+                userType.AddMemberName("ShowCardsAtBeginning");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -398,6 +414,8 @@ namespace Matching.Matching_XamlTypeInfo
                 userType.AddMemberName("ShowCardBack");
                 userType.AddMemberName("CardName");
                 userType.AddMemberName("FlipAnimation");
+                userType.AddMemberName("FlipToCardBack");
+                userType.AddMemberName("ShowCardsAtBeginning");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -409,6 +427,8 @@ namespace Matching.Matching_XamlTypeInfo
                 userType.AddMemberName("ShowCardBack");
                 userType.AddMemberName("CardName");
                 userType.AddMemberName("FlipAnimation");
+                userType.AddMemberName("FlipToCardBack");
+                userType.AddMemberName("ShowCardsAtBeginning");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -447,290 +467,390 @@ namespace Matching.Matching_XamlTypeInfo
             var that = (global::Matching.CircleCard)instance;
             return that.FlipAnimation;
         }
-        private object get_4_DiamondCard_ShowCardFront(object instance)
+        private object get_4_CircleCard_FlipToCardBack(object instance)
+        {
+            var that = (global::Matching.CircleCard)instance;
+            return that.FlipToCardBack;
+        }
+        private object get_5_CircleCard_ShowCardsAtBeginning(object instance)
+        {
+            var that = (global::Matching.CircleCard)instance;
+            return that.ShowCardsAtBeginning;
+        }
+        private object get_6_DiamondCard_ShowCardFront(object instance)
         {
             var that = (global::Matching.DiamondCard)instance;
             return that.ShowCardFront;
         }
-        private void set_4_DiamondCard_ShowCardFront(object instance, object Value)
+        private void set_6_DiamondCard_ShowCardFront(object instance, object Value)
         {
             var that = (global::Matching.DiamondCard)instance;
             that.ShowCardFront = (global::System.Boolean)Value;
         }
-        private object get_5_DiamondCard_ShowCardBack(object instance)
+        private object get_7_DiamondCard_ShowCardBack(object instance)
         {
             var that = (global::Matching.DiamondCard)instance;
             return that.ShowCardBack;
         }
-        private void set_5_DiamondCard_ShowCardBack(object instance, object Value)
+        private void set_7_DiamondCard_ShowCardBack(object instance, object Value)
         {
             var that = (global::Matching.DiamondCard)instance;
             that.ShowCardBack = (global::System.Boolean)Value;
         }
-        private object get_6_DiamondCard_CardName(object instance)
+        private object get_8_DiamondCard_CardName(object instance)
         {
             var that = (global::Matching.DiamondCard)instance;
             return that.CardName;
         }
-        private void set_6_DiamondCard_CardName(object instance, object Value)
+        private void set_8_DiamondCard_CardName(object instance, object Value)
         {
             var that = (global::Matching.DiamondCard)instance;
             that.CardName = (global::System.String)Value;
         }
-        private object get_7_DiamondCard_FlipAnimation(object instance)
+        private object get_9_DiamondCard_FlipAnimation(object instance)
         {
             var that = (global::Matching.DiamondCard)instance;
             return that.FlipAnimation;
         }
-        private object get_8_GameBoard_DefaultViewModel(object instance)
+        private object get_10_DiamondCard_FlipToCardBack(object instance)
+        {
+            var that = (global::Matching.DiamondCard)instance;
+            return that.FlipToCardBack;
+        }
+        private object get_11_DiamondCard_ShowCardsAtBeginning(object instance)
+        {
+            var that = (global::Matching.DiamondCard)instance;
+            return that.ShowCardsAtBeginning;
+        }
+        private object get_12_GameBoard_DefaultViewModel(object instance)
         {
             var that = (global::Matching.GameBoard)instance;
             return that.DefaultViewModel;
         }
-        private object get_9_GameBoard_NavigationHelper(object instance)
+        private object get_13_GameBoard_NavigationHelper(object instance)
         {
             var that = (global::Matching.GameBoard)instance;
             return that.NavigationHelper;
         }
-        private object get_10_HexagonCard_ShowCardFront(object instance)
+        private object get_14_HexagonCard_ShowCardFront(object instance)
         {
             var that = (global::Matching.HexagonCard)instance;
             return that.ShowCardFront;
         }
-        private void set_10_HexagonCard_ShowCardFront(object instance, object Value)
+        private void set_14_HexagonCard_ShowCardFront(object instance, object Value)
         {
             var that = (global::Matching.HexagonCard)instance;
             that.ShowCardFront = (global::System.Boolean)Value;
         }
-        private object get_11_HexagonCard_ShowCardBack(object instance)
+        private object get_15_HexagonCard_ShowCardBack(object instance)
         {
             var that = (global::Matching.HexagonCard)instance;
             return that.ShowCardBack;
         }
-        private void set_11_HexagonCard_ShowCardBack(object instance, object Value)
+        private void set_15_HexagonCard_ShowCardBack(object instance, object Value)
         {
             var that = (global::Matching.HexagonCard)instance;
             that.ShowCardBack = (global::System.Boolean)Value;
         }
-        private object get_12_HexagonCard_CardName(object instance)
+        private object get_16_HexagonCard_CardName(object instance)
         {
             var that = (global::Matching.HexagonCard)instance;
             return that.CardName;
         }
-        private object get_13_HexagonCard_FlipAnimation(object instance)
+        private object get_17_HexagonCard_FlipAnimation(object instance)
         {
             var that = (global::Matching.HexagonCard)instance;
             return that.FlipAnimation;
         }
-        private object get_14_MoonCard_ShowCardFront(object instance)
+        private object get_18_HexagonCard_FlipToCardBack(object instance)
+        {
+            var that = (global::Matching.HexagonCard)instance;
+            return that.FlipToCardBack;
+        }
+        private object get_19_HexagonCard_ShowCardsAtBeginning(object instance)
+        {
+            var that = (global::Matching.HexagonCard)instance;
+            return that.ShowCardsAtBeginning;
+        }
+        private object get_20_MoonCard_ShowCardFront(object instance)
         {
             var that = (global::Matching.MoonCard)instance;
             return that.ShowCardFront;
         }
-        private void set_14_MoonCard_ShowCardFront(object instance, object Value)
+        private void set_20_MoonCard_ShowCardFront(object instance, object Value)
         {
             var that = (global::Matching.MoonCard)instance;
             that.ShowCardFront = (global::System.Boolean)Value;
         }
-        private object get_15_MoonCard_ShowCardBack(object instance)
+        private object get_21_MoonCard_ShowCardBack(object instance)
         {
             var that = (global::Matching.MoonCard)instance;
             return that.ShowCardBack;
         }
-        private void set_15_MoonCard_ShowCardBack(object instance, object Value)
+        private void set_21_MoonCard_ShowCardBack(object instance, object Value)
         {
             var that = (global::Matching.MoonCard)instance;
             that.ShowCardBack = (global::System.Boolean)Value;
         }
-        private object get_16_MoonCard_CardName(object instance)
+        private object get_22_MoonCard_CardName(object instance)
         {
             var that = (global::Matching.MoonCard)instance;
             return that.CardName;
         }
-        private object get_17_MoonCard_FlipAnimation(object instance)
+        private object get_23_MoonCard_FlipAnimation(object instance)
         {
             var that = (global::Matching.MoonCard)instance;
             return that.FlipAnimation;
         }
-        private object get_18_ParallelogramCard_ShowCardFront(object instance)
+        private object get_24_MoonCard_FlipToCardBack(object instance)
+        {
+            var that = (global::Matching.MoonCard)instance;
+            return that.FlipToCardBack;
+        }
+        private object get_25_MoonCard_ShowCardsAtBeginning(object instance)
+        {
+            var that = (global::Matching.MoonCard)instance;
+            return that.ShowCardsAtBeginning;
+        }
+        private object get_26_ParallelogramCard_ShowCardFront(object instance)
         {
             var that = (global::Matching.ParallelogramCard)instance;
             return that.ShowCardFront;
         }
-        private void set_18_ParallelogramCard_ShowCardFront(object instance, object Value)
+        private void set_26_ParallelogramCard_ShowCardFront(object instance, object Value)
         {
             var that = (global::Matching.ParallelogramCard)instance;
             that.ShowCardFront = (global::System.Boolean)Value;
         }
-        private object get_19_ParallelogramCard_ShowCardBack(object instance)
+        private object get_27_ParallelogramCard_ShowCardBack(object instance)
         {
             var that = (global::Matching.ParallelogramCard)instance;
             return that.ShowCardBack;
         }
-        private void set_19_ParallelogramCard_ShowCardBack(object instance, object Value)
+        private void set_27_ParallelogramCard_ShowCardBack(object instance, object Value)
         {
             var that = (global::Matching.ParallelogramCard)instance;
             that.ShowCardBack = (global::System.Boolean)Value;
         }
-        private object get_20_ParallelogramCard_CardName(object instance)
+        private object get_28_ParallelogramCard_CardName(object instance)
         {
             var that = (global::Matching.ParallelogramCard)instance;
             return that.CardName;
         }
-        private object get_21_ParallelogramCard_FlipAnimation(object instance)
+        private object get_29_ParallelogramCard_FlipAnimation(object instance)
         {
             var that = (global::Matching.ParallelogramCard)instance;
             return that.FlipAnimation;
         }
-        private object get_22_PentagonCard_ShowCardFront(object instance)
+        private object get_30_ParallelogramCard_FlipToCardBack(object instance)
+        {
+            var that = (global::Matching.ParallelogramCard)instance;
+            return that.FlipToCardBack;
+        }
+        private object get_31_ParallelogramCard_ShowCardsAtBeginning(object instance)
+        {
+            var that = (global::Matching.ParallelogramCard)instance;
+            return that.ShowCardsAtBeginning;
+        }
+        private object get_32_PentagonCard_ShowCardFront(object instance)
         {
             var that = (global::Matching.PentagonCard)instance;
             return that.ShowCardFront;
         }
-        private void set_22_PentagonCard_ShowCardFront(object instance, object Value)
+        private void set_32_PentagonCard_ShowCardFront(object instance, object Value)
         {
             var that = (global::Matching.PentagonCard)instance;
             that.ShowCardFront = (global::System.Boolean)Value;
         }
-        private object get_23_PentagonCard_ShowCardBack(object instance)
+        private object get_33_PentagonCard_ShowCardBack(object instance)
         {
             var that = (global::Matching.PentagonCard)instance;
             return that.ShowCardBack;
         }
-        private void set_23_PentagonCard_ShowCardBack(object instance, object Value)
+        private void set_33_PentagonCard_ShowCardBack(object instance, object Value)
         {
             var that = (global::Matching.PentagonCard)instance;
             that.ShowCardBack = (global::System.Boolean)Value;
         }
-        private object get_24_PentagonCard_CardName(object instance)
+        private object get_34_PentagonCard_CardName(object instance)
         {
             var that = (global::Matching.PentagonCard)instance;
             return that.CardName;
         }
-        private object get_25_PentagonCard_FlipAnimation(object instance)
+        private object get_35_PentagonCard_FlipAnimation(object instance)
         {
             var that = (global::Matching.PentagonCard)instance;
             return that.FlipAnimation;
         }
-        private object get_26_SquareCard_ShowCardFront(object instance)
+        private object get_36_PentagonCard_FlipToCardBack(object instance)
+        {
+            var that = (global::Matching.PentagonCard)instance;
+            return that.FlipToCardBack;
+        }
+        private object get_37_PentagonCard_ShowCardsAtBeginning(object instance)
+        {
+            var that = (global::Matching.PentagonCard)instance;
+            return that.ShowCardsAtBeginning;
+        }
+        private object get_38_SquareCard_ShowCardFront(object instance)
         {
             var that = (global::Matching.SquareCard)instance;
             return that.ShowCardFront;
         }
-        private void set_26_SquareCard_ShowCardFront(object instance, object Value)
+        private void set_38_SquareCard_ShowCardFront(object instance, object Value)
         {
             var that = (global::Matching.SquareCard)instance;
             that.ShowCardFront = (global::System.Boolean)Value;
         }
-        private object get_27_SquareCard_ShowCardBack(object instance)
+        private object get_39_SquareCard_ShowCardBack(object instance)
         {
             var that = (global::Matching.SquareCard)instance;
             return that.ShowCardBack;
         }
-        private void set_27_SquareCard_ShowCardBack(object instance, object Value)
+        private void set_39_SquareCard_ShowCardBack(object instance, object Value)
         {
             var that = (global::Matching.SquareCard)instance;
             that.ShowCardBack = (global::System.Boolean)Value;
         }
-        private object get_28_SquareCard_CardName(object instance)
+        private object get_40_SquareCard_CardName(object instance)
         {
             var that = (global::Matching.SquareCard)instance;
             return that.CardName;
         }
-        private object get_29_SquareCard_FlipAnimation(object instance)
+        private object get_41_SquareCard_FlipAnimation(object instance)
         {
             var that = (global::Matching.SquareCard)instance;
             return that.FlipAnimation;
         }
-        private object get_30_StarCard_ShowCardFront(object instance)
+        private object get_42_SquareCard_FlipToCardBack(object instance)
+        {
+            var that = (global::Matching.SquareCard)instance;
+            return that.FlipToCardBack;
+        }
+        private object get_43_SquareCard_ShowCardsAtBeginning(object instance)
+        {
+            var that = (global::Matching.SquareCard)instance;
+            return that.ShowCardsAtBeginning;
+        }
+        private object get_44_StarCard_ShowCardFront(object instance)
         {
             var that = (global::Matching.StarCard)instance;
             return that.ShowCardFront;
         }
-        private void set_30_StarCard_ShowCardFront(object instance, object Value)
+        private void set_44_StarCard_ShowCardFront(object instance, object Value)
         {
             var that = (global::Matching.StarCard)instance;
             that.ShowCardFront = (global::System.Boolean)Value;
         }
-        private object get_31_StarCard_ShowCardBack(object instance)
+        private object get_45_StarCard_ShowCardBack(object instance)
         {
             var that = (global::Matching.StarCard)instance;
             return that.ShowCardBack;
         }
-        private void set_31_StarCard_ShowCardBack(object instance, object Value)
+        private void set_45_StarCard_ShowCardBack(object instance, object Value)
         {
             var that = (global::Matching.StarCard)instance;
             that.ShowCardBack = (global::System.Boolean)Value;
         }
-        private object get_32_StarCard_CardName(object instance)
+        private object get_46_StarCard_CardName(object instance)
         {
             var that = (global::Matching.StarCard)instance;
             return that.CardName;
         }
-        private object get_33_StarCard_FlipAnimation(object instance)
+        private object get_47_StarCard_FlipAnimation(object instance)
         {
             var that = (global::Matching.StarCard)instance;
             return that.FlipAnimation;
         }
-        private object get_34_TrapezoidCard_ShowCardFront(object instance)
+        private object get_48_StarCard_FlipToCardBack(object instance)
+        {
+            var that = (global::Matching.StarCard)instance;
+            return that.FlipToCardBack;
+        }
+        private object get_49_StarCard_ShowCardsAtBeginning(object instance)
+        {
+            var that = (global::Matching.StarCard)instance;
+            return that.ShowCardsAtBeginning;
+        }
+        private object get_50_TrapezoidCard_ShowCardFront(object instance)
         {
             var that = (global::Matching.TrapezoidCard)instance;
             return that.ShowCardFront;
         }
-        private void set_34_TrapezoidCard_ShowCardFront(object instance, object Value)
+        private void set_50_TrapezoidCard_ShowCardFront(object instance, object Value)
         {
             var that = (global::Matching.TrapezoidCard)instance;
             that.ShowCardFront = (global::System.Boolean)Value;
         }
-        private object get_35_TrapezoidCard_ShowCardBack(object instance)
+        private object get_51_TrapezoidCard_ShowCardBack(object instance)
         {
             var that = (global::Matching.TrapezoidCard)instance;
             return that.ShowCardBack;
         }
-        private void set_35_TrapezoidCard_ShowCardBack(object instance, object Value)
+        private void set_51_TrapezoidCard_ShowCardBack(object instance, object Value)
         {
             var that = (global::Matching.TrapezoidCard)instance;
             that.ShowCardBack = (global::System.Boolean)Value;
         }
-        private object get_36_TrapezoidCard_CardName(object instance)
+        private object get_52_TrapezoidCard_CardName(object instance)
         {
             var that = (global::Matching.TrapezoidCard)instance;
             return that.CardName;
         }
-        private object get_37_TrapezoidCard_FlipAnimation(object instance)
+        private object get_53_TrapezoidCard_FlipAnimation(object instance)
         {
             var that = (global::Matching.TrapezoidCard)instance;
             return that.FlipAnimation;
         }
-        private object get_38_TriangleCard_ShowCardFront(object instance)
+        private object get_54_TrapezoidCard_FlipToCardBack(object instance)
+        {
+            var that = (global::Matching.TrapezoidCard)instance;
+            return that.FlipToCardBack;
+        }
+        private object get_55_TrapezoidCard_ShowCardsAtBeginning(object instance)
+        {
+            var that = (global::Matching.TrapezoidCard)instance;
+            return that.ShowCardsAtBeginning;
+        }
+        private object get_56_TriangleCard_ShowCardFront(object instance)
         {
             var that = (global::Matching.TriangleCard)instance;
             return that.ShowCardFront;
         }
-        private void set_38_TriangleCard_ShowCardFront(object instance, object Value)
+        private void set_56_TriangleCard_ShowCardFront(object instance, object Value)
         {
             var that = (global::Matching.TriangleCard)instance;
             that.ShowCardFront = (global::System.Boolean)Value;
         }
-        private object get_39_TriangleCard_ShowCardBack(object instance)
+        private object get_57_TriangleCard_ShowCardBack(object instance)
         {
             var that = (global::Matching.TriangleCard)instance;
             return that.ShowCardBack;
         }
-        private void set_39_TriangleCard_ShowCardBack(object instance, object Value)
+        private void set_57_TriangleCard_ShowCardBack(object instance, object Value)
         {
             var that = (global::Matching.TriangleCard)instance;
             that.ShowCardBack = (global::System.Boolean)Value;
         }
-        private object get_40_TriangleCard_CardName(object instance)
+        private object get_58_TriangleCard_CardName(object instance)
         {
             var that = (global::Matching.TriangleCard)instance;
             return that.CardName;
         }
-        private object get_41_TriangleCard_FlipAnimation(object instance)
+        private object get_59_TriangleCard_FlipAnimation(object instance)
         {
             var that = (global::Matching.TriangleCard)instance;
             return that.FlipAnimation;
+        }
+        private object get_60_TriangleCard_FlipToCardBack(object instance)
+        {
+            var that = (global::Matching.TriangleCard)instance;
+            return that.FlipToCardBack;
+        }
+        private object get_61_TriangleCard_ShowCardsAtBeginning(object instance)
+        {
+            var that = (global::Matching.TriangleCard)instance;
+            return that.ShowCardsAtBeginning;
         }
 
         private global::Windows.UI.Xaml.Markup.IXamlMember CreateXamlMember(string longMemberName)
@@ -764,232 +884,352 @@ namespace Matching.Matching_XamlTypeInfo
                 xamlMember.Getter = get_3_CircleCard_FlipAnimation;
                 xamlMember.SetIsReadOnly();
                 break;
+            case "Matching.CircleCard.FlipToCardBack":
+                userType = (global::Matching.Matching_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Matching.CircleCard");
+                xamlMember = new global::Matching.Matching_XamlTypeInfo.XamlMember(this, "FlipToCardBack", "Windows.UI.Xaml.Media.Animation.Storyboard");
+                xamlMember.Getter = get_4_CircleCard_FlipToCardBack;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Matching.CircleCard.ShowCardsAtBeginning":
+                userType = (global::Matching.Matching_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Matching.CircleCard");
+                xamlMember = new global::Matching.Matching_XamlTypeInfo.XamlMember(this, "ShowCardsAtBeginning", "Windows.UI.Xaml.Media.Animation.Storyboard");
+                xamlMember.Getter = get_5_CircleCard_ShowCardsAtBeginning;
+                xamlMember.SetIsReadOnly();
+                break;
             case "Matching.DiamondCard.ShowCardFront":
                 userType = (global::Matching.Matching_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Matching.DiamondCard");
                 xamlMember = new global::Matching.Matching_XamlTypeInfo.XamlMember(this, "ShowCardFront", "Boolean");
-                xamlMember.Getter = get_4_DiamondCard_ShowCardFront;
-                xamlMember.Setter = set_4_DiamondCard_ShowCardFront;
+                xamlMember.Getter = get_6_DiamondCard_ShowCardFront;
+                xamlMember.Setter = set_6_DiamondCard_ShowCardFront;
                 break;
             case "Matching.DiamondCard.ShowCardBack":
                 userType = (global::Matching.Matching_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Matching.DiamondCard");
                 xamlMember = new global::Matching.Matching_XamlTypeInfo.XamlMember(this, "ShowCardBack", "Boolean");
-                xamlMember.Getter = get_5_DiamondCard_ShowCardBack;
-                xamlMember.Setter = set_5_DiamondCard_ShowCardBack;
+                xamlMember.Getter = get_7_DiamondCard_ShowCardBack;
+                xamlMember.Setter = set_7_DiamondCard_ShowCardBack;
                 break;
             case "Matching.DiamondCard.CardName":
                 userType = (global::Matching.Matching_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Matching.DiamondCard");
                 xamlMember = new global::Matching.Matching_XamlTypeInfo.XamlMember(this, "CardName", "String");
-                xamlMember.Getter = get_6_DiamondCard_CardName;
-                xamlMember.Setter = set_6_DiamondCard_CardName;
+                xamlMember.Getter = get_8_DiamondCard_CardName;
+                xamlMember.Setter = set_8_DiamondCard_CardName;
                 break;
             case "Matching.DiamondCard.FlipAnimation":
                 userType = (global::Matching.Matching_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Matching.DiamondCard");
                 xamlMember = new global::Matching.Matching_XamlTypeInfo.XamlMember(this, "FlipAnimation", "Windows.UI.Xaml.Media.Animation.Storyboard");
-                xamlMember.Getter = get_7_DiamondCard_FlipAnimation;
+                xamlMember.Getter = get_9_DiamondCard_FlipAnimation;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Matching.DiamondCard.FlipToCardBack":
+                userType = (global::Matching.Matching_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Matching.DiamondCard");
+                xamlMember = new global::Matching.Matching_XamlTypeInfo.XamlMember(this, "FlipToCardBack", "Windows.UI.Xaml.Media.Animation.Storyboard");
+                xamlMember.Getter = get_10_DiamondCard_FlipToCardBack;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Matching.DiamondCard.ShowCardsAtBeginning":
+                userType = (global::Matching.Matching_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Matching.DiamondCard");
+                xamlMember = new global::Matching.Matching_XamlTypeInfo.XamlMember(this, "ShowCardsAtBeginning", "Windows.UI.Xaml.Media.Animation.Storyboard");
+                xamlMember.Getter = get_11_DiamondCard_ShowCardsAtBeginning;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Matching.GameBoard.DefaultViewModel":
                 userType = (global::Matching.Matching_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Matching.GameBoard");
                 xamlMember = new global::Matching.Matching_XamlTypeInfo.XamlMember(this, "DefaultViewModel", "Matching.Common.ObservableDictionary");
-                xamlMember.Getter = get_8_GameBoard_DefaultViewModel;
+                xamlMember.Getter = get_12_GameBoard_DefaultViewModel;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Matching.GameBoard.NavigationHelper":
                 userType = (global::Matching.Matching_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Matching.GameBoard");
                 xamlMember = new global::Matching.Matching_XamlTypeInfo.XamlMember(this, "NavigationHelper", "Matching.Common.NavigationHelper");
-                xamlMember.Getter = get_9_GameBoard_NavigationHelper;
+                xamlMember.Getter = get_13_GameBoard_NavigationHelper;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Matching.HexagonCard.ShowCardFront":
                 userType = (global::Matching.Matching_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Matching.HexagonCard");
                 xamlMember = new global::Matching.Matching_XamlTypeInfo.XamlMember(this, "ShowCardFront", "Boolean");
-                xamlMember.Getter = get_10_HexagonCard_ShowCardFront;
-                xamlMember.Setter = set_10_HexagonCard_ShowCardFront;
+                xamlMember.Getter = get_14_HexagonCard_ShowCardFront;
+                xamlMember.Setter = set_14_HexagonCard_ShowCardFront;
                 break;
             case "Matching.HexagonCard.ShowCardBack":
                 userType = (global::Matching.Matching_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Matching.HexagonCard");
                 xamlMember = new global::Matching.Matching_XamlTypeInfo.XamlMember(this, "ShowCardBack", "Boolean");
-                xamlMember.Getter = get_11_HexagonCard_ShowCardBack;
-                xamlMember.Setter = set_11_HexagonCard_ShowCardBack;
+                xamlMember.Getter = get_15_HexagonCard_ShowCardBack;
+                xamlMember.Setter = set_15_HexagonCard_ShowCardBack;
                 break;
             case "Matching.HexagonCard.CardName":
                 userType = (global::Matching.Matching_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Matching.HexagonCard");
                 xamlMember = new global::Matching.Matching_XamlTypeInfo.XamlMember(this, "CardName", "String");
-                xamlMember.Getter = get_12_HexagonCard_CardName;
+                xamlMember.Getter = get_16_HexagonCard_CardName;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Matching.HexagonCard.FlipAnimation":
                 userType = (global::Matching.Matching_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Matching.HexagonCard");
                 xamlMember = new global::Matching.Matching_XamlTypeInfo.XamlMember(this, "FlipAnimation", "Windows.UI.Xaml.Media.Animation.Storyboard");
-                xamlMember.Getter = get_13_HexagonCard_FlipAnimation;
+                xamlMember.Getter = get_17_HexagonCard_FlipAnimation;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Matching.HexagonCard.FlipToCardBack":
+                userType = (global::Matching.Matching_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Matching.HexagonCard");
+                xamlMember = new global::Matching.Matching_XamlTypeInfo.XamlMember(this, "FlipToCardBack", "Windows.UI.Xaml.Media.Animation.Storyboard");
+                xamlMember.Getter = get_18_HexagonCard_FlipToCardBack;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Matching.HexagonCard.ShowCardsAtBeginning":
+                userType = (global::Matching.Matching_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Matching.HexagonCard");
+                xamlMember = new global::Matching.Matching_XamlTypeInfo.XamlMember(this, "ShowCardsAtBeginning", "Windows.UI.Xaml.Media.Animation.Storyboard");
+                xamlMember.Getter = get_19_HexagonCard_ShowCardsAtBeginning;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Matching.MoonCard.ShowCardFront":
                 userType = (global::Matching.Matching_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Matching.MoonCard");
                 xamlMember = new global::Matching.Matching_XamlTypeInfo.XamlMember(this, "ShowCardFront", "Boolean");
-                xamlMember.Getter = get_14_MoonCard_ShowCardFront;
-                xamlMember.Setter = set_14_MoonCard_ShowCardFront;
+                xamlMember.Getter = get_20_MoonCard_ShowCardFront;
+                xamlMember.Setter = set_20_MoonCard_ShowCardFront;
                 break;
             case "Matching.MoonCard.ShowCardBack":
                 userType = (global::Matching.Matching_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Matching.MoonCard");
                 xamlMember = new global::Matching.Matching_XamlTypeInfo.XamlMember(this, "ShowCardBack", "Boolean");
-                xamlMember.Getter = get_15_MoonCard_ShowCardBack;
-                xamlMember.Setter = set_15_MoonCard_ShowCardBack;
+                xamlMember.Getter = get_21_MoonCard_ShowCardBack;
+                xamlMember.Setter = set_21_MoonCard_ShowCardBack;
                 break;
             case "Matching.MoonCard.CardName":
                 userType = (global::Matching.Matching_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Matching.MoonCard");
                 xamlMember = new global::Matching.Matching_XamlTypeInfo.XamlMember(this, "CardName", "String");
-                xamlMember.Getter = get_16_MoonCard_CardName;
+                xamlMember.Getter = get_22_MoonCard_CardName;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Matching.MoonCard.FlipAnimation":
                 userType = (global::Matching.Matching_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Matching.MoonCard");
                 xamlMember = new global::Matching.Matching_XamlTypeInfo.XamlMember(this, "FlipAnimation", "Windows.UI.Xaml.Media.Animation.Storyboard");
-                xamlMember.Getter = get_17_MoonCard_FlipAnimation;
+                xamlMember.Getter = get_23_MoonCard_FlipAnimation;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Matching.MoonCard.FlipToCardBack":
+                userType = (global::Matching.Matching_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Matching.MoonCard");
+                xamlMember = new global::Matching.Matching_XamlTypeInfo.XamlMember(this, "FlipToCardBack", "Windows.UI.Xaml.Media.Animation.Storyboard");
+                xamlMember.Getter = get_24_MoonCard_FlipToCardBack;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Matching.MoonCard.ShowCardsAtBeginning":
+                userType = (global::Matching.Matching_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Matching.MoonCard");
+                xamlMember = new global::Matching.Matching_XamlTypeInfo.XamlMember(this, "ShowCardsAtBeginning", "Windows.UI.Xaml.Media.Animation.Storyboard");
+                xamlMember.Getter = get_25_MoonCard_ShowCardsAtBeginning;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Matching.ParallelogramCard.ShowCardFront":
                 userType = (global::Matching.Matching_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Matching.ParallelogramCard");
                 xamlMember = new global::Matching.Matching_XamlTypeInfo.XamlMember(this, "ShowCardFront", "Boolean");
-                xamlMember.Getter = get_18_ParallelogramCard_ShowCardFront;
-                xamlMember.Setter = set_18_ParallelogramCard_ShowCardFront;
+                xamlMember.Getter = get_26_ParallelogramCard_ShowCardFront;
+                xamlMember.Setter = set_26_ParallelogramCard_ShowCardFront;
                 break;
             case "Matching.ParallelogramCard.ShowCardBack":
                 userType = (global::Matching.Matching_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Matching.ParallelogramCard");
                 xamlMember = new global::Matching.Matching_XamlTypeInfo.XamlMember(this, "ShowCardBack", "Boolean");
-                xamlMember.Getter = get_19_ParallelogramCard_ShowCardBack;
-                xamlMember.Setter = set_19_ParallelogramCard_ShowCardBack;
+                xamlMember.Getter = get_27_ParallelogramCard_ShowCardBack;
+                xamlMember.Setter = set_27_ParallelogramCard_ShowCardBack;
                 break;
             case "Matching.ParallelogramCard.CardName":
                 userType = (global::Matching.Matching_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Matching.ParallelogramCard");
                 xamlMember = new global::Matching.Matching_XamlTypeInfo.XamlMember(this, "CardName", "String");
-                xamlMember.Getter = get_20_ParallelogramCard_CardName;
+                xamlMember.Getter = get_28_ParallelogramCard_CardName;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Matching.ParallelogramCard.FlipAnimation":
                 userType = (global::Matching.Matching_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Matching.ParallelogramCard");
                 xamlMember = new global::Matching.Matching_XamlTypeInfo.XamlMember(this, "FlipAnimation", "Windows.UI.Xaml.Media.Animation.Storyboard");
-                xamlMember.Getter = get_21_ParallelogramCard_FlipAnimation;
+                xamlMember.Getter = get_29_ParallelogramCard_FlipAnimation;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Matching.ParallelogramCard.FlipToCardBack":
+                userType = (global::Matching.Matching_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Matching.ParallelogramCard");
+                xamlMember = new global::Matching.Matching_XamlTypeInfo.XamlMember(this, "FlipToCardBack", "Windows.UI.Xaml.Media.Animation.Storyboard");
+                xamlMember.Getter = get_30_ParallelogramCard_FlipToCardBack;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Matching.ParallelogramCard.ShowCardsAtBeginning":
+                userType = (global::Matching.Matching_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Matching.ParallelogramCard");
+                xamlMember = new global::Matching.Matching_XamlTypeInfo.XamlMember(this, "ShowCardsAtBeginning", "Windows.UI.Xaml.Media.Animation.Storyboard");
+                xamlMember.Getter = get_31_ParallelogramCard_ShowCardsAtBeginning;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Matching.PentagonCard.ShowCardFront":
                 userType = (global::Matching.Matching_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Matching.PentagonCard");
                 xamlMember = new global::Matching.Matching_XamlTypeInfo.XamlMember(this, "ShowCardFront", "Boolean");
-                xamlMember.Getter = get_22_PentagonCard_ShowCardFront;
-                xamlMember.Setter = set_22_PentagonCard_ShowCardFront;
+                xamlMember.Getter = get_32_PentagonCard_ShowCardFront;
+                xamlMember.Setter = set_32_PentagonCard_ShowCardFront;
                 break;
             case "Matching.PentagonCard.ShowCardBack":
                 userType = (global::Matching.Matching_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Matching.PentagonCard");
                 xamlMember = new global::Matching.Matching_XamlTypeInfo.XamlMember(this, "ShowCardBack", "Boolean");
-                xamlMember.Getter = get_23_PentagonCard_ShowCardBack;
-                xamlMember.Setter = set_23_PentagonCard_ShowCardBack;
+                xamlMember.Getter = get_33_PentagonCard_ShowCardBack;
+                xamlMember.Setter = set_33_PentagonCard_ShowCardBack;
                 break;
             case "Matching.PentagonCard.CardName":
                 userType = (global::Matching.Matching_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Matching.PentagonCard");
                 xamlMember = new global::Matching.Matching_XamlTypeInfo.XamlMember(this, "CardName", "String");
-                xamlMember.Getter = get_24_PentagonCard_CardName;
+                xamlMember.Getter = get_34_PentagonCard_CardName;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Matching.PentagonCard.FlipAnimation":
                 userType = (global::Matching.Matching_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Matching.PentagonCard");
                 xamlMember = new global::Matching.Matching_XamlTypeInfo.XamlMember(this, "FlipAnimation", "Windows.UI.Xaml.Media.Animation.Storyboard");
-                xamlMember.Getter = get_25_PentagonCard_FlipAnimation;
+                xamlMember.Getter = get_35_PentagonCard_FlipAnimation;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Matching.PentagonCard.FlipToCardBack":
+                userType = (global::Matching.Matching_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Matching.PentagonCard");
+                xamlMember = new global::Matching.Matching_XamlTypeInfo.XamlMember(this, "FlipToCardBack", "Windows.UI.Xaml.Media.Animation.Storyboard");
+                xamlMember.Getter = get_36_PentagonCard_FlipToCardBack;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Matching.PentagonCard.ShowCardsAtBeginning":
+                userType = (global::Matching.Matching_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Matching.PentagonCard");
+                xamlMember = new global::Matching.Matching_XamlTypeInfo.XamlMember(this, "ShowCardsAtBeginning", "Windows.UI.Xaml.Media.Animation.Storyboard");
+                xamlMember.Getter = get_37_PentagonCard_ShowCardsAtBeginning;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Matching.SquareCard.ShowCardFront":
                 userType = (global::Matching.Matching_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Matching.SquareCard");
                 xamlMember = new global::Matching.Matching_XamlTypeInfo.XamlMember(this, "ShowCardFront", "Boolean");
-                xamlMember.Getter = get_26_SquareCard_ShowCardFront;
-                xamlMember.Setter = set_26_SquareCard_ShowCardFront;
+                xamlMember.Getter = get_38_SquareCard_ShowCardFront;
+                xamlMember.Setter = set_38_SquareCard_ShowCardFront;
                 break;
             case "Matching.SquareCard.ShowCardBack":
                 userType = (global::Matching.Matching_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Matching.SquareCard");
                 xamlMember = new global::Matching.Matching_XamlTypeInfo.XamlMember(this, "ShowCardBack", "Boolean");
-                xamlMember.Getter = get_27_SquareCard_ShowCardBack;
-                xamlMember.Setter = set_27_SquareCard_ShowCardBack;
+                xamlMember.Getter = get_39_SquareCard_ShowCardBack;
+                xamlMember.Setter = set_39_SquareCard_ShowCardBack;
                 break;
             case "Matching.SquareCard.CardName":
                 userType = (global::Matching.Matching_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Matching.SquareCard");
                 xamlMember = new global::Matching.Matching_XamlTypeInfo.XamlMember(this, "CardName", "String");
-                xamlMember.Getter = get_28_SquareCard_CardName;
+                xamlMember.Getter = get_40_SquareCard_CardName;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Matching.SquareCard.FlipAnimation":
                 userType = (global::Matching.Matching_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Matching.SquareCard");
                 xamlMember = new global::Matching.Matching_XamlTypeInfo.XamlMember(this, "FlipAnimation", "Windows.UI.Xaml.Media.Animation.Storyboard");
-                xamlMember.Getter = get_29_SquareCard_FlipAnimation;
+                xamlMember.Getter = get_41_SquareCard_FlipAnimation;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Matching.SquareCard.FlipToCardBack":
+                userType = (global::Matching.Matching_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Matching.SquareCard");
+                xamlMember = new global::Matching.Matching_XamlTypeInfo.XamlMember(this, "FlipToCardBack", "Windows.UI.Xaml.Media.Animation.Storyboard");
+                xamlMember.Getter = get_42_SquareCard_FlipToCardBack;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Matching.SquareCard.ShowCardsAtBeginning":
+                userType = (global::Matching.Matching_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Matching.SquareCard");
+                xamlMember = new global::Matching.Matching_XamlTypeInfo.XamlMember(this, "ShowCardsAtBeginning", "Windows.UI.Xaml.Media.Animation.Storyboard");
+                xamlMember.Getter = get_43_SquareCard_ShowCardsAtBeginning;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Matching.StarCard.ShowCardFront":
                 userType = (global::Matching.Matching_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Matching.StarCard");
                 xamlMember = new global::Matching.Matching_XamlTypeInfo.XamlMember(this, "ShowCardFront", "Boolean");
-                xamlMember.Getter = get_30_StarCard_ShowCardFront;
-                xamlMember.Setter = set_30_StarCard_ShowCardFront;
+                xamlMember.Getter = get_44_StarCard_ShowCardFront;
+                xamlMember.Setter = set_44_StarCard_ShowCardFront;
                 break;
             case "Matching.StarCard.ShowCardBack":
                 userType = (global::Matching.Matching_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Matching.StarCard");
                 xamlMember = new global::Matching.Matching_XamlTypeInfo.XamlMember(this, "ShowCardBack", "Boolean");
-                xamlMember.Getter = get_31_StarCard_ShowCardBack;
-                xamlMember.Setter = set_31_StarCard_ShowCardBack;
+                xamlMember.Getter = get_45_StarCard_ShowCardBack;
+                xamlMember.Setter = set_45_StarCard_ShowCardBack;
                 break;
             case "Matching.StarCard.CardName":
                 userType = (global::Matching.Matching_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Matching.StarCard");
                 xamlMember = new global::Matching.Matching_XamlTypeInfo.XamlMember(this, "CardName", "String");
-                xamlMember.Getter = get_32_StarCard_CardName;
+                xamlMember.Getter = get_46_StarCard_CardName;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Matching.StarCard.FlipAnimation":
                 userType = (global::Matching.Matching_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Matching.StarCard");
                 xamlMember = new global::Matching.Matching_XamlTypeInfo.XamlMember(this, "FlipAnimation", "Windows.UI.Xaml.Media.Animation.Storyboard");
-                xamlMember.Getter = get_33_StarCard_FlipAnimation;
+                xamlMember.Getter = get_47_StarCard_FlipAnimation;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Matching.StarCard.FlipToCardBack":
+                userType = (global::Matching.Matching_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Matching.StarCard");
+                xamlMember = new global::Matching.Matching_XamlTypeInfo.XamlMember(this, "FlipToCardBack", "Windows.UI.Xaml.Media.Animation.Storyboard");
+                xamlMember.Getter = get_48_StarCard_FlipToCardBack;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Matching.StarCard.ShowCardsAtBeginning":
+                userType = (global::Matching.Matching_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Matching.StarCard");
+                xamlMember = new global::Matching.Matching_XamlTypeInfo.XamlMember(this, "ShowCardsAtBeginning", "Windows.UI.Xaml.Media.Animation.Storyboard");
+                xamlMember.Getter = get_49_StarCard_ShowCardsAtBeginning;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Matching.TrapezoidCard.ShowCardFront":
                 userType = (global::Matching.Matching_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Matching.TrapezoidCard");
                 xamlMember = new global::Matching.Matching_XamlTypeInfo.XamlMember(this, "ShowCardFront", "Boolean");
-                xamlMember.Getter = get_34_TrapezoidCard_ShowCardFront;
-                xamlMember.Setter = set_34_TrapezoidCard_ShowCardFront;
+                xamlMember.Getter = get_50_TrapezoidCard_ShowCardFront;
+                xamlMember.Setter = set_50_TrapezoidCard_ShowCardFront;
                 break;
             case "Matching.TrapezoidCard.ShowCardBack":
                 userType = (global::Matching.Matching_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Matching.TrapezoidCard");
                 xamlMember = new global::Matching.Matching_XamlTypeInfo.XamlMember(this, "ShowCardBack", "Boolean");
-                xamlMember.Getter = get_35_TrapezoidCard_ShowCardBack;
-                xamlMember.Setter = set_35_TrapezoidCard_ShowCardBack;
+                xamlMember.Getter = get_51_TrapezoidCard_ShowCardBack;
+                xamlMember.Setter = set_51_TrapezoidCard_ShowCardBack;
                 break;
             case "Matching.TrapezoidCard.CardName":
                 userType = (global::Matching.Matching_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Matching.TrapezoidCard");
                 xamlMember = new global::Matching.Matching_XamlTypeInfo.XamlMember(this, "CardName", "String");
-                xamlMember.Getter = get_36_TrapezoidCard_CardName;
+                xamlMember.Getter = get_52_TrapezoidCard_CardName;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Matching.TrapezoidCard.FlipAnimation":
                 userType = (global::Matching.Matching_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Matching.TrapezoidCard");
                 xamlMember = new global::Matching.Matching_XamlTypeInfo.XamlMember(this, "FlipAnimation", "Windows.UI.Xaml.Media.Animation.Storyboard");
-                xamlMember.Getter = get_37_TrapezoidCard_FlipAnimation;
+                xamlMember.Getter = get_53_TrapezoidCard_FlipAnimation;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Matching.TrapezoidCard.FlipToCardBack":
+                userType = (global::Matching.Matching_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Matching.TrapezoidCard");
+                xamlMember = new global::Matching.Matching_XamlTypeInfo.XamlMember(this, "FlipToCardBack", "Windows.UI.Xaml.Media.Animation.Storyboard");
+                xamlMember.Getter = get_54_TrapezoidCard_FlipToCardBack;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Matching.TrapezoidCard.ShowCardsAtBeginning":
+                userType = (global::Matching.Matching_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Matching.TrapezoidCard");
+                xamlMember = new global::Matching.Matching_XamlTypeInfo.XamlMember(this, "ShowCardsAtBeginning", "Windows.UI.Xaml.Media.Animation.Storyboard");
+                xamlMember.Getter = get_55_TrapezoidCard_ShowCardsAtBeginning;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Matching.TriangleCard.ShowCardFront":
                 userType = (global::Matching.Matching_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Matching.TriangleCard");
                 xamlMember = new global::Matching.Matching_XamlTypeInfo.XamlMember(this, "ShowCardFront", "Boolean");
-                xamlMember.Getter = get_38_TriangleCard_ShowCardFront;
-                xamlMember.Setter = set_38_TriangleCard_ShowCardFront;
+                xamlMember.Getter = get_56_TriangleCard_ShowCardFront;
+                xamlMember.Setter = set_56_TriangleCard_ShowCardFront;
                 break;
             case "Matching.TriangleCard.ShowCardBack":
                 userType = (global::Matching.Matching_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Matching.TriangleCard");
                 xamlMember = new global::Matching.Matching_XamlTypeInfo.XamlMember(this, "ShowCardBack", "Boolean");
-                xamlMember.Getter = get_39_TriangleCard_ShowCardBack;
-                xamlMember.Setter = set_39_TriangleCard_ShowCardBack;
+                xamlMember.Getter = get_57_TriangleCard_ShowCardBack;
+                xamlMember.Setter = set_57_TriangleCard_ShowCardBack;
                 break;
             case "Matching.TriangleCard.CardName":
                 userType = (global::Matching.Matching_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Matching.TriangleCard");
                 xamlMember = new global::Matching.Matching_XamlTypeInfo.XamlMember(this, "CardName", "String");
-                xamlMember.Getter = get_40_TriangleCard_CardName;
+                xamlMember.Getter = get_58_TriangleCard_CardName;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Matching.TriangleCard.FlipAnimation":
                 userType = (global::Matching.Matching_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Matching.TriangleCard");
                 xamlMember = new global::Matching.Matching_XamlTypeInfo.XamlMember(this, "FlipAnimation", "Windows.UI.Xaml.Media.Animation.Storyboard");
-                xamlMember.Getter = get_41_TriangleCard_FlipAnimation;
+                xamlMember.Getter = get_59_TriangleCard_FlipAnimation;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Matching.TriangleCard.FlipToCardBack":
+                userType = (global::Matching.Matching_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Matching.TriangleCard");
+                xamlMember = new global::Matching.Matching_XamlTypeInfo.XamlMember(this, "FlipToCardBack", "Windows.UI.Xaml.Media.Animation.Storyboard");
+                xamlMember.Getter = get_60_TriangleCard_FlipToCardBack;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Matching.TriangleCard.ShowCardsAtBeginning":
+                userType = (global::Matching.Matching_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Matching.TriangleCard");
+                xamlMember = new global::Matching.Matching_XamlTypeInfo.XamlMember(this, "ShowCardsAtBeginning", "Windows.UI.Xaml.Media.Animation.Storyboard");
+                xamlMember.Getter = get_61_TriangleCard_ShowCardsAtBeginning;
                 xamlMember.SetIsReadOnly();
                 break;
             }

@@ -75,6 +75,14 @@ namespace Matching
 			get { return flipCardStoryboard; }
 		}
 
+		/// <summary>
+		/// gets the storyboard for flipping the card to its face down position
+		/// </summary>
+		public Storyboard FlipToCardBack
+		{
+			get { return flipToCardBack; }
+		}
+
 		#endregion
 
 		#region construction / destruction
@@ -86,7 +94,15 @@ namespace Matching
 		{
 			InitializeComponent();
 		}
-	
+
+		/// <summary>
+		/// gets the storyboard for displaying the cards at the beginning of the game
+		/// </summary>
+		public Storyboard ShowCardsAtBeginning
+		{
+			get { return showCardsAtBeginning; }
+		}
+
 		#endregion
 
 		#region methods

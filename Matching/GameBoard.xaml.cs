@@ -104,40 +104,75 @@ namespace Matching
 		{
 			CircleCard circleCard1 = new CircleCard();
 			circleCard1.Tapped += card_Tapped;
+			circleCard1.ShowCardsAtBeginning.Begin();
+
 			CircleCard circleCard2 = new CircleCard();
 			circleCard2.Tapped += card_Tapped;
+			circleCard2.ShowCardsAtBeginning.Begin();
+
 			DiamondCard diamondCard1 = new DiamondCard();
 			diamondCard1.Tapped += card_Tapped;
+			diamondCard1.ShowCardsAtBeginning.Begin();
+
 			DiamondCard diamondCard2 = new DiamondCard();
 			diamondCard2.Tapped += card_Tapped;
+			diamondCard2.ShowCardsAtBeginning.Begin();
+			
 			HexagonCard hexagonCard1 = new HexagonCard();
 			hexagonCard1.Tapped += card_Tapped;
+			hexagonCard1.ShowCardsAtBeginning.Begin();
+
 			HexagonCard hexagonCard2 = new HexagonCard();
 			hexagonCard2.Tapped += card_Tapped;
+			hexagonCard2.ShowCardsAtBeginning.Begin();
+		
 			ParallelogramCard parallelogramCard1 = new ParallelogramCard();
 			parallelogramCard1.Tapped += card_Tapped;
+			parallelogramCard1.ShowCardsAtBeginning.Begin();		
+			
 			ParallelogramCard parallelogramCard2 = new ParallelogramCard();
 			parallelogramCard2.Tapped += card_Tapped;
+			parallelogramCard2.ShowCardsAtBeginning.Begin();		
+			
 			PentagonCard pentagonCard1 = new PentagonCard();
 			pentagonCard1.Tapped += card_Tapped;
+			pentagonCard1.ShowCardsAtBeginning.Begin();
+		
 			PentagonCard pentagonCard2 = new PentagonCard();
 			pentagonCard2.Tapped += card_Tapped;
+			pentagonCard2.ShowCardsAtBeginning.Begin();
+		
 			SquareCard squareCard1 = new SquareCard();
 			squareCard1.Tapped += card_Tapped;
+			squareCard1.ShowCardsAtBeginning.Begin();
+
 			SquareCard squareCard2 = new SquareCard();
 			squareCard2.Tapped += card_Tapped;
+			squareCard2.ShowCardsAtBeginning.Begin();
+		
 			StarCard starCard1 = new StarCard();
 			starCard1.Tapped += card_Tapped;
+			starCard1.ShowCardsAtBeginning.Begin();
+
 			StarCard starCard2 = new StarCard();
 			starCard2.Tapped += card_Tapped;
+			starCard2.ShowCardsAtBeginning.Begin();
+
 			TrapezoidCard trapezoidCard1 = new TrapezoidCard();
 			trapezoidCard1.Tapped += card_Tapped;
+			trapezoidCard1.ShowCardsAtBeginning.Begin();
+
 			TrapezoidCard trapezoidCard2 = new TrapezoidCard();
 			trapezoidCard2.Tapped += card_Tapped;
+			trapezoidCard2.ShowCardsAtBeginning.Begin();
+
 			TriangleCard triangleCard1 = new TriangleCard();
 			triangleCard1.Tapped += card_Tapped;
+			triangleCard1.ShowCardsAtBeginning.Begin();
+
 			TriangleCard triangleCard2 = new TriangleCard();
 			triangleCard2.Tapped += card_Tapped;
+			triangleCard2.ShowCardsAtBeginning.Begin();
 
 			Random random = new Random();
 			int randomLocation = -1;
@@ -220,8 +255,8 @@ namespace Matching
 		private void card_Tapped(object sender, TappedRoutedEventArgs e)
 		{
 			ICard card = sender as ICard;
-			card.ShowCardBack = false;
-			card.ShowCardFront = true;
+			//card.ShowCardBack = false;
+			//card.ShowCardFront = true;
 			card.FlipAnimation.Begin();
 
 			if (SelectedCard == null)
@@ -236,17 +271,20 @@ namespace Matching
 					_matches.Text = string.Format("Matches: {0}", ++NumberOfMatches);
 					(SelectedCard as UserControl).Tapped -= card_Tapped;
 					(card as UserControl).Tapped -= card_Tapped;
-					SelectedCard = null;
 				}
 				else
 				{
-					SelectedCard.ShowCardBack = true;
-					SelectedCard.ShowCardFront = false;
-					SelectedCard = null;
+					//SelectedCard.ShowCardBack = true;
+					//SelectedCard.ShowCardFront = false;
 
-					card.ShowCardBack = true;
-					card.ShowCardFront = false;
+					//card.ShowCardBack = true;
+					//card.ShowCardFront = false;
+
+					SelectedCard.FlipToCardBack.Begin();
+					card.FlipToCardBack.Begin();
 				}
+
+				SelectedCard = null;
 			}
 		}
 

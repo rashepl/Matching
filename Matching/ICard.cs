@@ -43,7 +43,23 @@ namespace Matching
 		{
 			get;
 		}
-		
+
+		/// <summary>
+		/// gets the storyboard for flipping the card to its face down position
+		/// </summary>
+		Storyboard FlipToCardBack
+		{
+			get;
+		}
+
+		/// <summary>
+		/// gets the storyboard for showing the front of the card at the beginning of the game
+		/// </summary>
+		Storyboard ShowCardsAtBeginning
+		{
+			get;
+		}
+
 		#endregion
 
 		#region construction / destruction
