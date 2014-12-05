@@ -26,7 +26,7 @@
   <ItemGroup>
     <AppxPackagedFile Include="D:\Software Projects\Matching\Matching\bin\Debug\Matching.exe">
       <PackagePath>Matching.exe</PackagePath>
-      <Modified>2014-12-04T03:46:34.123</Modified>
+      <Modified>2014-12-05T18:13:20.159</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Software Projects\Matching\Matching\Assets\Logo.scale-100.png">
       <PackagePath>Assets\Logo.scale-100.png</PackagePath>
@@ -62,7 +62,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Software Projects\Matching\Matching\bin\Debug\GameBoard.xbf">
       <PackagePath>GameBoard.xbf</PackagePath>
-      <Modified>2014-12-04T03:43:58.407</Modified>
+      <Modified>2014-12-05T18:13:19.764</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Software Projects\Matching\Matching\bin\Debug\HexagonCard.xbf">
       <PackagePath>HexagonCard.xbf</PackagePath>
@@ -102,7 +102,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Software Projects\Matching\Matching\bin\Debug\Matching.xr.xml">
       <PackagePath>Matching.xr.xml</PackagePath>
-      <Modified>2014-12-04T03:26:39.296</Modified>
+      <Modified>2014-12-05T18:13:19.751</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Software Projects\Matching\Matching\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>

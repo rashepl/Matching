@@ -33,6 +33,7 @@ namespace Matching
 		string CardName
 		{
 			get;
+			set;
 		}
 
 

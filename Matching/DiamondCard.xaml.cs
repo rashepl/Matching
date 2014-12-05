@@ -60,12 +60,12 @@ namespace Matching
 		}
 
 		/// <summary>
-		/// gets/sets the name of the card
+		/// gets the name of the card
 		/// </summary>
 		public string CardName
 		{
-			get;
-			set;
+			get { return Name; }
+			set { Name = value; }
 		}
 
 		/// <summary>

@@ -37,6 +37,11 @@ namespace Matching
 		/// </summary>
 		private int _numberOfMatches;
 
+		/// <summary>
+		/// holds the number of turns
+		/// </summary>
+		private int _numberOfTurns;
+
 		#endregion
 
 		#region properties
@@ -76,6 +81,15 @@ namespace Matching
 			set { _numberOfMatches = value; }
 		}
 
+		/// <summary>
+		/// gets/sets the number of turns made by the player
+		/// </summary>
+		private int NumberOfTurns
+		{
+			get { return _numberOfTurns; }
+			set { _numberOfTurns = value; }
+		}
+
 		#endregion
 
 		#region construction / destruction
@@ -102,75 +116,95 @@ namespace Matching
 		/// </summary>
 		private void InitializeCards()
 		{
+			showPreviewText.Begin();
+
 			CircleCard circleCard1 = new CircleCard();
+			circleCard1.CardName = "circleCard1";
 			circleCard1.Tapped += card_Tapped;
 			circleCard1.ShowCardsAtBeginning.Begin();
 
 			CircleCard circleCard2 = new CircleCard();
+			circleCard2.CardName = "circleCard2";
 			circleCard2.Tapped += card_Tapped;
 			circleCard2.ShowCardsAtBeginning.Begin();
 
 			DiamondCard diamondCard1 = new DiamondCard();
+			diamondCard1.CardName = "diamondCard1";
 			diamondCard1.Tapped += card_Tapped;
 			diamondCard1.ShowCardsAtBeginning.Begin();
 
 			DiamondCard diamondCard2 = new DiamondCard();
+			diamondCard2.CardName = "diamondCard2";
 			diamondCard2.Tapped += card_Tapped;
 			diamondCard2.ShowCardsAtBeginning.Begin();
 			
 			HexagonCard hexagonCard1 = new HexagonCard();
+			hexagonCard1.CardName = "hexagonCard1";
 			hexagonCard1.Tapped += card_Tapped;
 			hexagonCard1.ShowCardsAtBeginning.Begin();
 
 			HexagonCard hexagonCard2 = new HexagonCard();
+			hexagonCard2.CardName = "hexagonCard2";
 			hexagonCard2.Tapped += card_Tapped;
 			hexagonCard2.ShowCardsAtBeginning.Begin();
 		
 			ParallelogramCard parallelogramCard1 = new ParallelogramCard();
+			parallelogramCard1.CardName = "parallelogramCard1";
 			parallelogramCard1.Tapped += card_Tapped;
 			parallelogramCard1.ShowCardsAtBeginning.Begin();		
 			
 			ParallelogramCard parallelogramCard2 = new ParallelogramCard();
+			parallelogramCard2.CardName = "parallelogramCard2";
 			parallelogramCard2.Tapped += card_Tapped;
 			parallelogramCard2.ShowCardsAtBeginning.Begin();		
 			
 			PentagonCard pentagonCard1 = new PentagonCard();
+			pentagonCard1.CardName = "pentagonCard1";
 			pentagonCard1.Tapped += card_Tapped;
 			pentagonCard1.ShowCardsAtBeginning.Begin();
 		
 			PentagonCard pentagonCard2 = new PentagonCard();
+			pentagonCard2.CardName = "pentagonCard2";
 			pentagonCard2.Tapped += card_Tapped;
 			pentagonCard2.ShowCardsAtBeginning.Begin();
 		
 			SquareCard squareCard1 = new SquareCard();
+			squareCard1.CardName = "squareCard1";
 			squareCard1.Tapped += card_Tapped;
 			squareCard1.ShowCardsAtBeginning.Begin();
 
 			SquareCard squareCard2 = new SquareCard();
+			squareCard2.CardName = "squareCard2";
 			squareCard2.Tapped += card_Tapped;
 			squareCard2.ShowCardsAtBeginning.Begin();
 		
 			StarCard starCard1 = new StarCard();
+			starCard1.CardName = "starCard1";
 			starCard1.Tapped += card_Tapped;
 			starCard1.ShowCardsAtBeginning.Begin();
 
 			StarCard starCard2 = new StarCard();
+			starCard2.CardName = "starCard2";
 			starCard2.Tapped += card_Tapped;
 			starCard2.ShowCardsAtBeginning.Begin();
 
 			TrapezoidCard trapezoidCard1 = new TrapezoidCard();
+			trapezoidCard1.CardName = "trapezoidCard1";
 			trapezoidCard1.Tapped += card_Tapped;
 			trapezoidCard1.ShowCardsAtBeginning.Begin();
 
 			TrapezoidCard trapezoidCard2 = new TrapezoidCard();
+			trapezoidCard2.CardName = "trapezoidCard2";
 			trapezoidCard2.Tapped += card_Tapped;
 			trapezoidCard2.ShowCardsAtBeginning.Begin();
 
 			TriangleCard triangleCard1 = new TriangleCard();
+			triangleCard1.CardName = "triangleCard1";
 			triangleCard1.Tapped += card_Tapped;
 			triangleCard1.ShowCardsAtBeginning.Begin();
 
 			TriangleCard triangleCard2 = new TriangleCard();
+			triangleCard2.CardName = "triangleCard2";
 			triangleCard2.Tapped += card_Tapped;
 			triangleCard2.ShowCardsAtBeginning.Begin();
 
@@ -262,15 +296,18 @@ namespace Matching
 			if (SelectedCard == null)
 			{
 				SelectedCard = card;
+				_turns.Text = string.Format("Turns: {0}", ++NumberOfTurns);
 			}
 			else
 			{
-				if (SelectedCard.GetType() == card.GetType())
+				if (SelectedCard.GetType() == card.GetType() && string.Compare(SelectedCard.CardName, card.CardName) != 0)
 				{
 					// match
 					_matches.Text = string.Format("Matches: {0}", ++NumberOfMatches);
 					(SelectedCard as UserControl).Tapped -= card_Tapped;
 					(card as UserControl).Tapped -= card_Tapped;
+
+					_notificationGrid.Visibility = NumberOfMatches == 8 ? Visibility.Visible : Visibility.Collapsed;
 				}
 				else
 				{

@@ -462,6 +462,11 @@ namespace Matching.Matching_XamlTypeInfo
             var that = (global::Matching.CircleCard)instance;
             return that.CardName;
         }
+        private void set_2_CircleCard_CardName(object instance, object Value)
+        {
+            var that = (global::Matching.CircleCard)instance;
+            that.CardName = (global::System.String)Value;
+        }
         private object get_3_CircleCard_FlipAnimation(object instance)
         {
             var that = (global::Matching.CircleCard)instance;
@@ -557,6 +562,11 @@ namespace Matching.Matching_XamlTypeInfo
             var that = (global::Matching.HexagonCard)instance;
             return that.CardName;
         }
+        private void set_16_HexagonCard_CardName(object instance, object Value)
+        {
+            var that = (global::Matching.HexagonCard)instance;
+            that.CardName = (global::System.String)Value;
+        }
         private object get_17_HexagonCard_FlipAnimation(object instance)
         {
             var that = (global::Matching.HexagonCard)instance;
@@ -596,6 +606,11 @@ namespace Matching.Matching_XamlTypeInfo
         {
             var that = (global::Matching.MoonCard)instance;
             return that.CardName;
+        }
+        private void set_22_MoonCard_CardName(object instance, object Value)
+        {
+            var that = (global::Matching.MoonCard)instance;
+            that.CardName = (global::System.String)Value;
         }
         private object get_23_MoonCard_FlipAnimation(object instance)
         {
@@ -637,6 +652,11 @@ namespace Matching.Matching_XamlTypeInfo
             var that = (global::Matching.ParallelogramCard)instance;
             return that.CardName;
         }
+        private void set_28_ParallelogramCard_CardName(object instance, object Value)
+        {
+            var that = (global::Matching.ParallelogramCard)instance;
+            that.CardName = (global::System.String)Value;
+        }
         private object get_29_ParallelogramCard_FlipAnimation(object instance)
         {
             var that = (global::Matching.ParallelogramCard)instance;
@@ -676,6 +696,11 @@ namespace Matching.Matching_XamlTypeInfo
         {
             var that = (global::Matching.PentagonCard)instance;
             return that.CardName;
+        }
+        private void set_34_PentagonCard_CardName(object instance, object Value)
+        {
+            var that = (global::Matching.PentagonCard)instance;
+            that.CardName = (global::System.String)Value;
         }
         private object get_35_PentagonCard_FlipAnimation(object instance)
         {
@@ -717,6 +742,11 @@ namespace Matching.Matching_XamlTypeInfo
             var that = (global::Matching.SquareCard)instance;
             return that.CardName;
         }
+        private void set_40_SquareCard_CardName(object instance, object Value)
+        {
+            var that = (global::Matching.SquareCard)instance;
+            that.CardName = (global::System.String)Value;
+        }
         private object get_41_SquareCard_FlipAnimation(object instance)
         {
             var that = (global::Matching.SquareCard)instance;
@@ -756,6 +786,11 @@ namespace Matching.Matching_XamlTypeInfo
         {
             var that = (global::Matching.StarCard)instance;
             return that.CardName;
+        }
+        private void set_46_StarCard_CardName(object instance, object Value)
+        {
+            var that = (global::Matching.StarCard)instance;
+            that.CardName = (global::System.String)Value;
         }
         private object get_47_StarCard_FlipAnimation(object instance)
         {
@@ -797,6 +832,11 @@ namespace Matching.Matching_XamlTypeInfo
             var that = (global::Matching.TrapezoidCard)instance;
             return that.CardName;
         }
+        private void set_52_TrapezoidCard_CardName(object instance, object Value)
+        {
+            var that = (global::Matching.TrapezoidCard)instance;
+            that.CardName = (global::System.String)Value;
+        }
         private object get_53_TrapezoidCard_FlipAnimation(object instance)
         {
             var that = (global::Matching.TrapezoidCard)instance;
@@ -837,6 +877,11 @@ namespace Matching.Matching_XamlTypeInfo
             var that = (global::Matching.TriangleCard)instance;
             return that.CardName;
         }
+        private void set_58_TriangleCard_CardName(object instance, object Value)
+        {
+            var that = (global::Matching.TriangleCard)instance;
+            that.CardName = (global::System.String)Value;
+        }
         private object get_59_TriangleCard_FlipAnimation(object instance)
         {
             var that = (global::Matching.TriangleCard)instance;
@@ -876,7 +921,7 @@ namespace Matching.Matching_XamlTypeInfo
                 userType = (global::Matching.Matching_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Matching.CircleCard");
                 xamlMember = new global::Matching.Matching_XamlTypeInfo.XamlMember(this, "CardName", "String");
                 xamlMember.Getter = get_2_CircleCard_CardName;
-                xamlMember.SetIsReadOnly();
+                xamlMember.Setter = set_2_CircleCard_CardName;
                 break;
             case "Matching.CircleCard.FlipAnimation":
                 userType = (global::Matching.Matching_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Matching.CircleCard");
@@ -960,7 +1005,7 @@ namespace Matching.Matching_XamlTypeInfo
                 userType = (global::Matching.Matching_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Matching.HexagonCard");
                 xamlMember = new global::Matching.Matching_XamlTypeInfo.XamlMember(this, "CardName", "String");
                 xamlMember.Getter = get_16_HexagonCard_CardName;
-                xamlMember.SetIsReadOnly();
+                xamlMember.Setter = set_16_HexagonCard_CardName;
                 break;
             case "Matching.HexagonCard.FlipAnimation":
                 userType = (global::Matching.Matching_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Matching.HexagonCard");
@@ -996,7 +1041,7 @@ namespace Matching.Matching_XamlTypeInfo
                 userType = (global::Matching.Matching_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Matching.MoonCard");
                 xamlMember = new global::Matching.Matching_XamlTypeInfo.XamlMember(this, "CardName", "String");
                 xamlMember.Getter = get_22_MoonCard_CardName;
-                xamlMember.SetIsReadOnly();
+                xamlMember.Setter = set_22_MoonCard_CardName;
                 break;
             case "Matching.MoonCard.FlipAnimation":
                 userType = (global::Matching.Matching_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Matching.MoonCard");
@@ -1032,7 +1077,7 @@ namespace Matching.Matching_XamlTypeInfo
                 userType = (global::Matching.Matching_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Matching.ParallelogramCard");
                 xamlMember = new global::Matching.Matching_XamlTypeInfo.XamlMember(this, "CardName", "String");
                 xamlMember.Getter = get_28_ParallelogramCard_CardName;
-                xamlMember.SetIsReadOnly();
+                xamlMember.Setter = set_28_ParallelogramCard_CardName;
                 break;
             case "Matching.ParallelogramCard.FlipAnimation":
                 userType = (global::Matching.Matching_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Matching.ParallelogramCard");
@@ -1068,7 +1113,7 @@ namespace Matching.Matching_XamlTypeInfo
                 userType = (global::Matching.Matching_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Matching.PentagonCard");
                 xamlMember = new global::Matching.Matching_XamlTypeInfo.XamlMember(this, "CardName", "String");
                 xamlMember.Getter = get_34_PentagonCard_CardName;
-                xamlMember.SetIsReadOnly();
+                xamlMember.Setter = set_34_PentagonCard_CardName;
                 break;
             case "Matching.PentagonCard.FlipAnimation":
                 userType = (global::Matching.Matching_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Matching.PentagonCard");
@@ -1104,7 +1149,7 @@ namespace Matching.Matching_XamlTypeInfo
                 userType = (global::Matching.Matching_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Matching.SquareCard");
                 xamlMember = new global::Matching.Matching_XamlTypeInfo.XamlMember(this, "CardName", "String");
                 xamlMember.Getter = get_40_SquareCard_CardName;
-                xamlMember.SetIsReadOnly();
+                xamlMember.Setter = set_40_SquareCard_CardName;
                 break;
             case "Matching.SquareCard.FlipAnimation":
                 userType = (global::Matching.Matching_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Matching.SquareCard");
@@ -1140,7 +1185,7 @@ namespace Matching.Matching_XamlTypeInfo
                 userType = (global::Matching.Matching_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Matching.StarCard");
                 xamlMember = new global::Matching.Matching_XamlTypeInfo.XamlMember(this, "CardName", "String");
                 xamlMember.Getter = get_46_StarCard_CardName;
-                xamlMember.SetIsReadOnly();
+                xamlMember.Setter = set_46_StarCard_CardName;
                 break;
             case "Matching.StarCard.FlipAnimation":
                 userType = (global::Matching.Matching_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Matching.StarCard");
@@ -1176,7 +1221,7 @@ namespace Matching.Matching_XamlTypeInfo
                 userType = (global::Matching.Matching_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Matching.TrapezoidCard");
                 xamlMember = new global::Matching.Matching_XamlTypeInfo.XamlMember(this, "CardName", "String");
                 xamlMember.Getter = get_52_TrapezoidCard_CardName;
-                xamlMember.SetIsReadOnly();
+                xamlMember.Setter = set_52_TrapezoidCard_CardName;
                 break;
             case "Matching.TrapezoidCard.FlipAnimation":
                 userType = (global::Matching.Matching_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Matching.TrapezoidCard");
@@ -1212,7 +1257,7 @@ namespace Matching.Matching_XamlTypeInfo
                 userType = (global::Matching.Matching_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Matching.TriangleCard");
                 xamlMember = new global::Matching.Matching_XamlTypeInfo.XamlMember(this, "CardName", "String");
                 xamlMember.Getter = get_58_TriangleCard_CardName;
-                xamlMember.SetIsReadOnly();
+                xamlMember.Setter = set_58_TriangleCard_CardName;
                 break;
             case "Matching.TriangleCard.FlipAnimation":
                 userType = (global::Matching.Matching_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Matching.TriangleCard");

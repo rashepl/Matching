@@ -13,6 +13,19 @@
     <Page.Resources>
         <!-- TODO: Delete this line if the key AppName is declared in App.xaml -->
         <x:String x:Key="AppName">My Application</x:String>
+        <Storyboard x:Name="showPreviewText">
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(TextBlock.Text)" Storyboard.TargetName="pageTitle">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="Previewing Cards"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:2" Value="Click on a Card to Turn it"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="_initializingCanvas">
+                <DiscreteObjectKeyFrame KeyTime="0:0:2">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Collapsed</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+        </Storyboard>
     </Page.Resources>
 
     <!--
@@ -37,6 +50,7 @@
                 <ColumnDefinition Width="120"/>
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="200"/>
+                <ColumnDefinition Width="200"/>
             </Grid.ColumnDefinitions>
             <Button x:Name="backButton" Margin="39,59,39,0" Command="{Binding NavigationHelper.GoBackCommand, ElementName=pageRoot}"
                         Style="{StaticResource NavigationBackButtonNormalStyle}"
@@ -44,11 +58,12 @@
                         AutomationProperties.Name="Back"
                         AutomationProperties.AutomationId="BackButton"
                         AutomationProperties.ItemType="Navigation Button"/>
-            <TextBlock x:Name="pageTitle" Text="Click on a Card to Turn it" Style="{StaticResource HeaderTextBlockStyle}" Grid.Column="1" 
+                <TextBlock x:Name="pageTitle" Text="Click on a Card to Turn it" Style="{StaticResource HeaderTextBlockStyle}" Grid.Column="1" 
                         IsHitTestVisible="false" TextWrapping="NoWrap" Margin="0,0,30,40" Height="40" VerticalAlignment="Bottom"/>
             <TextBlock x:Name="_matches" Text="Matches: 0" Grid.Column="2" Height="40" VerticalAlignment="Center" FontSize="30"/>
+            <TextBlock x:Name="_turns" Text="Turns: 0" Grid.Column="3" Height="40" VerticalAlignment="Center" FontSize="30"/>
         </Grid>
-        <Grid x:Name="_gameGrid" Grid.Row="1" Margin="5">
+        <Grid x:Name="_gameGrid" Grid.Row="1" Margin="5" Canvas.ZIndex="0">
             <Grid.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="#FFF5F5BC" Offset="0"/>
@@ -69,6 +84,16 @@
                 <RowDefinition Height="200*"/>
                 <RowDefinition Height="200*"/>
             </Grid.RowDefinitions>
+            <Grid x:Name="_notificationGrid" Grid.Column="1" Grid.Row="1" Grid.RowSpan="2" Grid.ColumnSpan="2" Background="#FFA4F036" Canvas.ZIndex="1" Visibility="Collapsed">
+                <Viewbox HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <TextBlock x:Name="_notificationText" Text="Congratulations!" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center" Foreground="#FFE61A1A"/>
+                </Viewbox>
+            </Grid>
+            <Canvas x:Name="_initializingCanvas" Grid.Row="0" Grid.Column="0" Grid.RowSpan="4" Grid.ColumnSpan="4" Canvas.ZIndex="1" Visibility="Visible">
+                <Canvas.Background>
+                    <SolidColorBrush Color="White" Opacity="0"/>
+                </Canvas.Background>
+            </Canvas>
         </Grid>
     </Grid>
 </Page>

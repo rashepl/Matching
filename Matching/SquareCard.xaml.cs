@@ -65,6 +65,7 @@ namespace Matching
 		public string CardName
 		{
 			get { return Name; }
+			set { Name = value; }
 		}
 
 		/// <summary>
